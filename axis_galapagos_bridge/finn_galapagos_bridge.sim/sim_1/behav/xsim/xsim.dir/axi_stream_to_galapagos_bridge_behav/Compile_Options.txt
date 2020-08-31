@@ -1,0 +1,1 @@
+-wto "af01657b14104413a1550bf285f0144c" --incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "axi_stream_to_galapagos_bridge_behav" "xil_defaultlib.axi_stream_to_galapagos_bridge" "xil_defaultlib.glbl" -log "elaborate.log" 

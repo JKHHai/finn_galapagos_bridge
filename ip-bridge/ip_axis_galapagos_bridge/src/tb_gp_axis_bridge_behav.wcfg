@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_gp_axis_bridge_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_gp_axis_bridge" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="320392910fs"></ZoomEndTime>
+      <Cursor1Time time="570000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="181"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="20" />
+   <wvobject type="logic" fp_name="/tb_gp_axis_bridge/r_clock">
+      <obj_property name="ElementShortName">r_clock</obj_property>
+      <obj_property name="ObjectShortName">r_clock</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_gp_axis_bridge/r_reset">
+      <obj_property name="ElementShortName">r_reset</obj_property>
+      <obj_property name="ObjectShortName">r_reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_gp_axis_bridge/r_galapagos_tvalid">
+      <obj_property name="ElementShortName">r_galapagos_tvalid</obj_property>
+      <obj_property name="ObjectShortName">r_galapagos_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_gp_axis_bridge/w_galapagos_tready">
+      <obj_property name="ElementShortName">w_galapagos_tready</obj_property>
+      <obj_property name="ObjectShortName">w_galapagos_tready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_gp_axis_bridge/r_galapagos_tdata">
+      <obj_property name="ElementShortName">r_galapagos_tdata[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_galapagos_tdata[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_gp_axis_bridge/r_galapagos_tkeep">
+      <obj_property name="ElementShortName">r_galapagos_tkeep[3:0]</obj_property>
+      <obj_property name="ObjectShortName">r_galapagos_tkeep[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_gp_axis_bridge/r_galapagos_tdest">
+      <obj_property name="ElementShortName">r_galapagos_tdest[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_galapagos_tdest[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_gp_axis_bridge/r_galapagos_tid">
+      <obj_property name="ElementShortName">r_galapagos_tid[7:0]</obj_property>
+      <obj_property name="ObjectShortName">r_galapagos_tid[7:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_gp_axis_bridge/r_galapagos_tlast">
+      <obj_property name="ElementShortName">r_galapagos_tlast</obj_property>
+      <obj_property name="ObjectShortName">r_galapagos_tlast</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_gp_axis_bridge/w_axis_tvalid">
+      <obj_property name="ElementShortName">w_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">w_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_gp_axis_bridge/r_axis_tready">
+      <obj_property name="ElementShortName">r_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">r_axis_tready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_gp_axis_bridge/r_axis_tdata">
+      <obj_property name="ElementShortName">r_axis_tdata[15:0]</obj_property>
+      <obj_property name="ObjectShortName">r_axis_tdata[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider360" type="divider">
+      <obj_property name="label">DUT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_gp_axis_bridge/DUT/i_gp_TVALID">
+      <obj_property name="ElementShortName">i_gp_TVALID</obj_property>
+      <obj_property name="ObjectShortName">i_gp_TVALID</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_gp_axis_bridge/DUT/o_gp_TREADY">
+      <obj_property name="ElementShortName">o_gp_TREADY</obj_property>
+      <obj_property name="ObjectShortName">o_gp_TREADY</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_gp_axis_bridge/DUT/w_gps_output_valid">
+      <obj_property name="ElementShortName">w_gps_output_valid</obj_property>
+      <obj_property name="ObjectShortName">w_gps_output_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_gp_axis_bridge/DUT/w_gps_output_ready">
+      <obj_property name="ElementShortName">w_gps_output_ready</obj_property>
+      <obj_property name="ObjectShortName">w_gps_output_ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider365" type="divider">
+      <obj_property name="label">GALAPAGOS READER</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_gp_axis_bridge/DUT/input_galapagos_stream/o_output_valid">
+      <obj_property name="ElementShortName">o_output_valid</obj_property>
+      <obj_property name="ObjectShortName">o_output_valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_gp_axis_bridge/DUT/input_galapagos_stream/i_output_ready">
+      <obj_property name="ElementShortName">i_output_ready</obj_property>
+      <obj_property name="ObjectShortName">i_output_ready</obj_property>
+   </wvobject>
+</wave_config>

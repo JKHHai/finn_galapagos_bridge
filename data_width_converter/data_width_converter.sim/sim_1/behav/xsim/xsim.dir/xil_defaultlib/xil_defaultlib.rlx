@@ -1,0 +1,7 @@
+0.6
+2018.3
+Dec  6 2018
+23:39:36
+/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/data_width_converter/data_width_converter.sim/sim_1/behav/xsim/glbl.v,1544155481,verilog,,,,glbl,,,,,,,,
+/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/shared-ip/data_width_converter.v,1598540777,verilog,,,,data_width_converter,,,,,,,,
+/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/shared-ip/tb_data_width_converter.sv,1598541008,systemVerilog,,,,tb_data_width_converter,,,,,,,,

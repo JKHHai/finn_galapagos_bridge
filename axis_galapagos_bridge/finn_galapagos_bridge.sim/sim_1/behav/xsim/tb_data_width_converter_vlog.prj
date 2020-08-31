@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../finn_galapagos_bridge.srcs/sources_1/new/data_width_converter.v" \
+
+sv xil_defaultlib  \
+"../../../../finn_galapagos_bridge.srcs/sim_1/new/tb_data_width_converter.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

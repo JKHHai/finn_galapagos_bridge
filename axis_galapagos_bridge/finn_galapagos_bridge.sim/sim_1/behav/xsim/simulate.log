@@ -1,0 +1,23 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+Galapagos TDATA: 0xcdefab
+Galapagos TLAST: 0x0
+Galapagos TDATA: 0xffffab
+Galapagos TLAST: 0x0
+Galapagos TDATA: 0x00ffff
+Galapagos TLAST: 0x1
+$finish called at time : 220 ns : File "/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.srcs/sim_1/new/tb_axis_gp_bridge.sv" Line 134
+Galapagos TDATA: 0xcdefab
+Galapagos TLAST: 0x0
+Galapagos TDATA: 0xffffab
+Galapagos TLAST: 0x0
+Galapagos TDATA: 0x00ffff
+Galapagos TLAST: 0x1
+$finish called at time : 220 ns : File "/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.srcs/sim_1/new/tb_axis_gp_bridge.sv" Line 134
+Galapagos TDATA: 0xcdefab
+Galapagos TLAST: 0x0
+Galapagos TDATA: 0xffffab
+Galapagos TLAST: 0x0
+Galapagos TDATA: 0x00ffff
+Galapagos TLAST: 0x1
+$finish called at time : 220 ns : File "/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.srcs/sim_1/new/tb_axis_gp_bridge.sv" Line 134

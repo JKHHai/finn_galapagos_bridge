@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Thu Aug 27 14:31:48 2020
+# Process ID: 31239
+# Current directory: /home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.sim/sim_1/behav/xsim
+# Command line: wbtcv -mode batch -source /home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.sim/sim_1/behav/xsim/xsim.dir/tb_axis_gp_bridge_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: /home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.sim/sim_1/behav/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.sim/sim_1/behav/xsim/xsim.dir/tb_axis_gp_bridge_behav/webtalk/xsim_webtalk.tcl -notrace

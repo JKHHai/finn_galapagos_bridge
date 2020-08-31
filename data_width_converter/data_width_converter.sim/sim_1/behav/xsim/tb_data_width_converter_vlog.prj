@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../shared-ip/data_width_converter.v" \
+
+sv xil_defaultlib  \
+"../../../../../shared-ip/tb_data_width_converter.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

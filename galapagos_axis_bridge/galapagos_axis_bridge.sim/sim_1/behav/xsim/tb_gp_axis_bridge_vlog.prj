@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../../shared-ip/data_width_converter.v" \
+"../../../../galapagos_axis_bridge.srcs/sources_1/imports/shared-ip/galapagos_axis_bridge.v" \
+
+sv xil_defaultlib  \
+"../../../../galapagos_axis_bridge.srcs/sim_1/imports/shared-ip/tb_gp_axis_bridge.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

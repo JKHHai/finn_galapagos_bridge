@@ -1,0 +1,3 @@
+Vivado Simulator 2018.3
+Time resolution is 1 ps
+$finish called at time : 140 ns : File "/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/shared-ip/tb_data_width_converter.sv" Line 104

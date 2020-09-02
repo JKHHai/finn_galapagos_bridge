@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_axis_gp_bridge_func_synth.v" \
+
+sv xil_defaultlib  \
+"../../../../../finn_galapagos_bridge.srcs/sim_1/new/tb_axis_gp_bridge.sv" \
+
+# Do not sort compile order
+nosort

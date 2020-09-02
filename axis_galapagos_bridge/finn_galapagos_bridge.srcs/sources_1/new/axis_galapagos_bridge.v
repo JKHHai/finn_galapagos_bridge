@@ -227,7 +227,7 @@ module axi_stream_to_galapagos_bridge
                         if (i_gp_TREADY == 1'b1)
                         begin
                            r_galapagos_tvalid <= 1'b0;
-                           if (r_galapagos_tlast <= 1'b1)
+                           if (r_galapagos_tlast == 1'b1)
                            begin
                                r_core_state <= STATE_INPUT_COLLECTION;
                            end 
@@ -239,7 +239,7 @@ module axi_stream_to_galapagos_bridge
                         else
                         begin
                             r_galapagos_tvalid <= 1'b1;
-                            r_core_state <= STATE_DATA_WIDTH_CONVERSION;
+                            r_core_state <= STATE_OUTPUT_TRANSMISSION;
                         end
                     end
                     else

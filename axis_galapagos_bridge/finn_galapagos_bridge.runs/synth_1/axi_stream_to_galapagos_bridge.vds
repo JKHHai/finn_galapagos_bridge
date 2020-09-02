@@ -1,0 +1,523 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Sep  2 00:28:47 2020
+# Process ID: 13411
+# Current directory: /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.runs/synth_1
+# Command line: vivado -log axi_stream_to_galapagos_bridge.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source axi_stream_to_galapagos_bridge.tcl
+# Log file: /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.runs/synth_1/axi_stream_to_galapagos_bridge.vds
+# Journal file: /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source axi_stream_to_galapagos_bridge.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/justin/paulchowresearch2020/Galapagos/galapagos/middleware/finn'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge'.
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository '/home/justin/paulchowresearch2020/FINN/finn_container_files/ip/code_gen_ipgen_StreamingFCLayer_Batch_0_5ufxrklk/project_StreamingFCLayer_Batch_0/sol1/impl'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/mnt/Xilinx/Vivado/2019.1/data/ip'.
+Command: synth_design -top axi_stream_to_galapagos_bridge -part xcku115-flva1517-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku115'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku115'
+INFO: [Common 17-1540] The version limit for your license is '2020.02' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13441 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1626.000 ; gain = 166.625 ; free physical = 59986 ; free virtual = 125326
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'axi_stream_to_galapagos_bridge' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.srcs/sources_1/new/axis_galapagos_bridge.v:23]
+	Parameter AXI_STREAM_DATA_WIDTH bound to: 64 - type: integer 
+	Parameter AXI_STREAM_NUM_TRANSFERS bound to: 1 - type: integer 
+	Parameter GALAPAGOS_DATA_WIDTH bound to: 512 - type: integer 
+	Parameter STATE_INPUT_COLLECTION bound to: 2'b00 
+	Parameter STATE_DATA_WIDTH_CONVERSION bound to: 2'b01 
+	Parameter STATE_OUTPUT_TRANSMISSION bound to: 2'b10 
+	Parameter AXI_STREAM_PACKET_SIZE bound to: 64 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'data_width_converter' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/shared-ip/data_width_converter.v:27]
+	Parameter INPUT_WIDTH bound to: 64 - type: integer 
+	Parameter OUTPUT_WIDTH bound to: 512 - type: integer 
+	Parameter STATE_IDLE bound to: 2'b00 
+	Parameter STATE_DATA_WIDTH_CONVERSION bound to: 2'b01 
+	Parameter STATE_OUTPUT_TRANSMISSION bound to: 2'b10 
+	Parameter LAST_TRANSFER_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/shared-ip/data_width_converter.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'data_width_converter' (1#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/shared-ip/data_width_converter.v:27]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.srcs/sources_1/new/axis_galapagos_bridge.v:138]
+INFO: [Synth 8-6155] done synthesizing module 'axi_stream_to_galapagos_bridge' (2#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.srcs/sources_1/new/axis_galapagos_bridge.v:23]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[31]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[30]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[29]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[28]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[27]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[26]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[25]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[24]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[23]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[22]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[21]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[20]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[19]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[18]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[17]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[16]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[15]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[14]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[13]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[12]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[11]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[10]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[9]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[8]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[31]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[30]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[29]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[28]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[27]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[26]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[25]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[24]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[23]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[22]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[21]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[20]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[19]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[18]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[17]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[16]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[15]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[14]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[13]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[12]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[11]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[10]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[9]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[8]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1679.750 ; gain = 220.375 ; free physical = 60009 ; free virtual = 125350
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1685.688 ; gain = 226.312 ; free physical = 60007 ; free virtual = 125347
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku115-flva1517-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+INFO: [Device 21-403] Loading part xcku115-flva1517-2-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1703.598 ; gain = 244.223 ; free physical = 60006 ; free virtual = 125347
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'r_output_last_reg' into 'r_output_valid_reg' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/shared-ip/data_width_converter.v:83]
+INFO: [Synth 8-802] inferred FSM for state register 'r_core_state_reg' in module 'data_width_converter'
+INFO: [Synth 8-802] inferred FSM for state register 'r_core_state_reg' in module 'axi_stream_to_galapagos_bridge'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+              STATE_IDLE |                              001 |                               00
+STATE_DATA_WIDTH_CONVERSION |                              010 |                               01
+STATE_OUTPUT_TRANSMISSION |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_core_state_reg' using encoding 'one-hot' in module 'data_width_converter'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+  STATE_INPUT_COLLECTION |                              001 |                               00
+STATE_DATA_WIDTH_CONVERSION |                              010 |                               01
+STATE_OUTPUT_TRANSMISSION |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'r_core_state_reg' using encoding 'one-hot' in module 'axi_stream_to_galapagos_bridge'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1711.605 ; gain = 252.230 ; free physical = 59991 ; free virtual = 125331
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 2     
+	               64 Bit    Registers := 4     
+	               32 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 8     
++---Muxes : 
+	   3 Input    512 Bit        Muxes := 1     
+	   2 Input    512 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 3     
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 7     
+	   3 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module axi_stream_to_galapagos_bridge 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	              512 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input    512 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 6     
+Module data_width_converter 
+Detailed RTL Component Info : 
++---Registers : 
+	              512 Bit    Registers := 1     
+	               64 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   3 Input    512 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input     64 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 5520 (col length:120)
+BRAMs: 4320 (col length: RAMB18 240 RAMB36 120)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[31]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[30]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[29]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[28]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[27]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[26]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[25]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[24]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[23]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[22]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[21]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[20]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[19]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[18]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[17]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[16]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[15]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[14]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[13]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[12]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[11]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[10]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[9]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[8]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[31]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[30]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[29]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[28]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[27]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[26]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[25]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[24]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[23]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[22]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[21]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[20]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[19]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[18]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[17]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[16]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[15]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[14]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[13]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[12]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[11]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[10]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[9]
+WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[8]
+INFO: [Synth 8-3886] merging instance 'dwc/r_input_keep_reg[0]' (FDRE) to 'dwc/r_input_keep_reg[1]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_input_keep_reg[1]' (FDRE) to 'dwc/r_input_keep_reg[2]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_input_keep_reg[2]' (FDRE) to 'dwc/r_input_keep_reg[3]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_input_keep_reg[3]' (FDRE) to 'dwc/r_input_keep_reg[4]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_input_keep_reg[4]' (FDRE) to 'dwc/r_input_keep_reg[5]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_input_keep_reg[5]' (FDRE) to 'dwc/r_input_keep_reg[6]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_input_keep_reg[6]' (FDRE) to 'dwc/r_input_keep_reg[7]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[8]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[9]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[10]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[11]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[12]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[13]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[14]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[15]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[16]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[17]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[18]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[19]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[20]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[21]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[22]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[23]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[24]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[25]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[26]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[27]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[28]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[29]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[30]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[31]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[32]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[33]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[34]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[35]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[36]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[37]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[38]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[39]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[40]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[41]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[42]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[43]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[44]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[45]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[46]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[47]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[48]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[49]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[50]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[51]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[52]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[53]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[54]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[55]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[56]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[57]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[58]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[59]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[60]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[61]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[62]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_keep_reg[63]' (FDRE) to 'dwc/r_output_data_reg[64]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[64]' (FDRE) to 'dwc/r_output_data_reg[65]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[65]' (FDRE) to 'dwc/r_output_data_reg[66]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[66]' (FDRE) to 'dwc/r_output_data_reg[67]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[67]' (FDRE) to 'dwc/r_output_data_reg[68]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[68]' (FDRE) to 'dwc/r_output_data_reg[69]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[69]' (FDRE) to 'dwc/r_output_data_reg[70]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[70]' (FDRE) to 'dwc/r_output_data_reg[71]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[71]' (FDRE) to 'dwc/r_output_data_reg[72]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[72]' (FDRE) to 'dwc/r_output_data_reg[73]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[73]' (FDRE) to 'dwc/r_output_data_reg[74]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[74]' (FDRE) to 'dwc/r_output_data_reg[75]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[75]' (FDRE) to 'dwc/r_output_data_reg[76]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[76]' (FDRE) to 'dwc/r_output_data_reg[77]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[77]' (FDRE) to 'dwc/r_output_data_reg[78]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[78]' (FDRE) to 'dwc/r_output_data_reg[79]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[79]' (FDRE) to 'dwc/r_output_data_reg[80]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[80]' (FDRE) to 'dwc/r_output_data_reg[81]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[81]' (FDRE) to 'dwc/r_output_data_reg[82]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[82]' (FDRE) to 'dwc/r_output_data_reg[83]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[83]' (FDRE) to 'dwc/r_output_data_reg[84]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[84]' (FDRE) to 'dwc/r_output_data_reg[85]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[85]' (FDRE) to 'dwc/r_output_data_reg[86]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[86]' (FDRE) to 'dwc/r_output_data_reg[87]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[87]' (FDRE) to 'dwc/r_output_data_reg[88]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[88]' (FDRE) to 'dwc/r_output_data_reg[89]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[89]' (FDRE) to 'dwc/r_output_data_reg[90]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[90]' (FDRE) to 'dwc/r_output_data_reg[91]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[91]' (FDRE) to 'dwc/r_output_data_reg[92]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[92]' (FDRE) to 'dwc/r_output_data_reg[93]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[93]' (FDRE) to 'dwc/r_output_data_reg[94]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[94]' (FDRE) to 'dwc/r_output_data_reg[95]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[95]' (FDRE) to 'dwc/r_output_data_reg[96]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[96]' (FDRE) to 'dwc/r_output_data_reg[97]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[97]' (FDRE) to 'dwc/r_output_data_reg[98]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[98]' (FDRE) to 'dwc/r_output_data_reg[99]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[99]' (FDRE) to 'dwc/r_output_data_reg[100]'
+INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[100]' (FDRE) to 'dwc/r_output_data_reg[101]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dwc/r_output_data_reg[511] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59405 ; free virtual = 124745
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59405 ; free virtual = 124745
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59405 ; free virtual = 124745
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59405 ; free virtual = 124745
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59405 ; free virtual = 124745
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59405 ; free virtual = 124745
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59405 ; free virtual = 124745
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59405 ; free virtual = 124745
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59405 ; free virtual = 124745
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |BUFG |     1|
+|2     |LUT1 |     1|
+|3     |LUT2 |    70|
+|4     |LUT3 |   137|
+|5     |LUT4 |     1|
+|6     |LUT5 |     2|
+|7     |LUT6 |     4|
+|8     |FDRE |   271|
+|9     |FDSE |     2|
+|10    |IBUF |    84|
+|11    |OBUF |   595|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+---------------------+------+
+|      |Instance |Module               |Cells |
++------+---------+---------------------+------+
+|1     |top      |                     |  1168|
+|2     |  dwc    |data_width_converter |   343|
++------+---------+---------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59404 ; free virtual = 124745
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 96 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59406 ; free virtual = 124746
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2176.105 ; gain = 716.723 ; free physical = 59406 ; free virtual = 124746
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 85 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2302.562 ; gain = 0.000 ; free physical = 59335 ; free virtual = 124675
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 85 instances were transformed.
+  BUFG => BUFGCE: 1 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 84 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+127 Infos, 98 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 2302.562 ; gain = 897.055 ; free physical = 59434 ; free virtual = 124774
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2302.562 ; gain = 0.000 ; free physical = 59434 ; free virtual = 124774
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.runs/synth_1/axi_stream_to_galapagos_bridge.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file axi_stream_to_galapagos_bridge_utilization_synth.rpt -pb axi_stream_to_galapagos_bridge_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed Sep  2 00:29:34 2020...

@@ -24,7 +24,7 @@ module tb_axis_gp_bridge();
     // Declarations
     parameter axi_stream_data_width = 32;
     parameter axi_stream_num_transfers = 2; // 64 bits in total
-    parameter galapagos_data_width = 24;
+    parameter galapagos_data_width = 128;
     parameter galapagos_tdest = 3;
     parameter galapagos_tid = 4;
     reg r_clock, r_reset;
@@ -123,7 +123,13 @@ module tb_axis_gp_bridge();
         #60 r_input_axis_data_bus = 32'hABCDEFAB;
         r_axis_tvalid = 1'b1;
 
-        #10 r_input_axis_data_bus = 32'hFFFFFFFF;
+        #60 r_input_axis_data_bus = 32'hFFFFFFFF;
+        r_axis_tvalid = 1'b1;
+
+        #60 r_input_axis_data_bus = 32'hFEDCBAFE;
+        r_axis_tvalid = 1'b1;
+
+        #60 r_input_axis_data_bus = 32'hAAAAAAAA;
         r_axis_tvalid = 1'b1;
 
         // #10 r_input_axis_data_bus = 32'hAFAFAFAF;
@@ -131,7 +137,7 @@ module tb_axis_gp_bridge();
 
         // #10 r_input_axis_data_bus = 32'hBCBCBCBC;
         // r_axis_tvalid = 1'b1;
-        #150 $finish;
+        #500 $finish;
     end  
 
     // Lower valid signal when ready signal is detected

@@ -3,7 +3,7 @@
   <spirit:vendor>uoft-hprc</spirit:vendor>
   <spirit:library>finn_galapagos_bridge</spirit:library>
   <spirit:name>axi_stream_to_galapagos_bridge</spirit:name>
-  <spirit:version>1.1</spirit:version>
+  <spirit:version>1.2</spirit:version>
   <spirit:busInterfaces>
     <spirit:busInterface>
       <spirit:name>i_axis</spirit:name>
@@ -164,7 +164,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>2ef220d6</spirit:value>
+            <spirit:value>7f17ed68</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -180,7 +180,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>2ef220d6</spirit:value>
+            <spirit:value>7f17ed68</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -195,7 +195,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>fca1989b</spirit:value>
+            <spirit:value>fd552c48</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -209,7 +209,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>viewChecksum</spirit:name>
-            <spirit:value>6a9265e9</spirit:value>
+            <spirit:value>27d137ec</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -471,7 +471,7 @@
       <spirit:file>
         <spirit:name>src/axis_galapagos_bridge.v</spirit:name>
         <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_3a8ecfb7</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_cba740e7</spirit:userFileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
@@ -499,13 +499,7 @@
         <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
       </spirit:file>
       <spirit:file>
-        <spirit:name>src/tb_data_width_converter_behav.wcfg</spirit:name>
-        <spirit:fileType>unknown</spirit:fileType>
-        <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
-        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>src/tb_gp_axis_bridge_behav.wcfg</spirit:name>
+        <spirit:name>src/tb_axis_gp_bridge_behav.wcfg</spirit:name>
         <spirit:fileType>unknown</spirit:fileType>
         <spirit:userFileType>IMPORTED_FILE</spirit:userFileType>
         <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
@@ -514,14 +508,14 @@
     <spirit:fileSet>
       <spirit:name>xilinx_xpgui_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>xgui/axi_stream_to_galapagos_bridge_v1_1.tcl</spirit:name>
+        <spirit:name>xgui/axi_stream_to_galapagos_bridge_v1_2.tcl</spirit:name>
         <spirit:fileType>tclSource</spirit:fileType>
-        <spirit:userFileType>CHECKSUM_6a9265e9</spirit:userFileType>
+        <spirit:userFileType>CHECKSUM_27d137ec</spirit:userFileType>
         <spirit:userFileType>XGUI_VERSION_2</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
-  <spirit:description>axi_stream_to_galapagos_bridge_v1_1</spirit:description>
+  <spirit:description>axi_stream_to_galapagos_bridge_v1_2</spirit:description>
   <spirit:parameters>
     <spirit:parameter>
       <spirit:name>AXI_STREAM_DATA_WIDTH</spirit:name>
@@ -530,7 +524,7 @@
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>AXI_STREAM_NUM_TRANSFERS</spirit:name>
-      <spirit:displayName>Number of AXI-Stream Transfers</spirit:displayName>
+      <spirit:displayName>AXI-Stream Num Transfers</spirit:displayName>
       <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.AXI_STREAM_NUM_TRANSFERS">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
@@ -552,6 +546,7 @@
         <xilinx:family xilinx:lifeCycle="Production">kintex7l</xilinx:family>
         <xilinx:family xilinx:lifeCycle="Production">qkintex7</xilinx:family>
         <xilinx:family xilinx:lifeCycle="Production">qkintex7l</xilinx:family>
+        <xilinx:family xilinx:lifeCycle="Production">akintex7</xilinx:family>
         <xilinx:family xilinx:lifeCycle="Production">artix7</xilinx:family>
         <xilinx:family xilinx:lifeCycle="Production">artix7l</xilinx:family>
         <xilinx:family xilinx:lifeCycle="Production">aartix7</xilinx:family>
@@ -572,46 +567,44 @@
       <xilinx:taxonomies>
         <xilinx:taxonomy>/UserIP</xilinx:taxonomy>
       </xilinx:taxonomies>
-      <xilinx:displayName>axi_stream_to_galapagos_bridge_v1_1</xilinx:displayName>
+      <xilinx:displayName>axi_stream_to_galapagos_bridge_v1_2</xilinx:displayName>
       <xilinx:definitionSource>package_project</xilinx:definitionSource>
       <xilinx:coreRevision>1</xilinx:coreRevision>
       <xilinx:upgrades>
         <xilinx:canUpgradeFrom>user.org:user:axi_stream_to_galapagos_bridge:1.0</xilinx:canUpgradeFrom>
       </xilinx:upgrades>
-      <xilinx:coreCreationDateTime>2020-08-28T19:08:35Z</xilinx:coreCreationDateTime>
+      <xilinx:coreCreationDateTime>2020-09-02T00:38:26Z</xilinx:coreCreationDateTime>
       <xilinx:tags>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@36d664f1_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@180fc1a2_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@2cdc283a_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@3b0ab135_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@101d86d9_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@605d82f5_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@1cd0b802_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@1218474d_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@37191c61_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@19fca700_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cac7fd2_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@161a9df7_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@5ccadc5d_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@6b815518_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@545a278e_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@8f36898_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@6acd04b5_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@1036b275_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@76519bca_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@743e1db4_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@7c98845_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@4260cf59_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
-        <xilinx:tag xilinx:name="ui.data.coregen.dd@3a69fff4_ARCHIVE_LOCATION">/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@53d0a72b_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@33b6f09a_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@24ce4fcc_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@160eb893_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@62404620_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3cf9d0fc_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3372dc57_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@565764c3_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ed23f58_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2f4b086a_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@38f10f0f_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@3773ed73_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@563db5d4_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@34cf0a4_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@26fb1c10_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@2126509f_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@1ea1ad66_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5a4514b5_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64589e33_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@5687bb04_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
+        <xilinx:tag xilinx:name="ui.data.coregen.dd@64470c66_ARCHIVE_LOCATION">/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge/ip_axis_galapagos_bridge</xilinx:tag>
       </xilinx:tags>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
-      <xilinx:xilinxVersion>2018.3</xilinx:xilinxVersion>
+      <xilinx:xilinxVersion>2019.1</xilinx:xilinxVersion>
       <xilinx:checksum xilinx:scope="busInterfaces" xilinx:value="905e01e4"/>
-      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="754c7077"/>
+      <xilinx:checksum xilinx:scope="fileGroups" xilinx:value="36b20113"/>
       <xilinx:checksum xilinx:scope="ports" xilinx:value="7857b34c"/>
       <xilinx:checksum xilinx:scope="hdlParameters" xilinx:value="b5eab35a"/>
-      <xilinx:checksum xilinx:scope="parameters" xilinx:value="d325bd6b"/>
+      <xilinx:checksum xilinx:scope="parameters" xilinx:value="e5f4946a"/>
     </xilinx:packagingInfo>
   </spirit:vendorExtensions>
 </spirit:component>

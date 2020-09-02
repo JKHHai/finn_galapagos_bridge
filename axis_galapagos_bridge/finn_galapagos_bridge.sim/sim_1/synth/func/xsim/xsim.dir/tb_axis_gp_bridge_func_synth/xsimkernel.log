@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_axis_gp_bridge_func_synth/xsimk -simmode gui -wdb tb_axis_gp_bridge_func_synth.wdb -simrunnum 0 -socket 33734
+Design successfully loaded
+Design Loading Memory Usage: 46360 KB (Peak: 46360 KB)
+Design Loading CPU Usage: 50 ms
+Simulation completed
+Simulation Memory Usage: 125196 KB (Peak: 185628 KB)
+Simulation CPU Usage: 110 ms

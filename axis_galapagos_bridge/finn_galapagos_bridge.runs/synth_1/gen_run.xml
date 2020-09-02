@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xcku115-flva1517-2-e" LaunchTime="1599006524">
+  <File Type="VDS-TIMING-PB" Name="axi_stream_to_galapagos_bridge_timing_summary_synth.pb"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="axi_stream_to_galapagos_bridge_timing_summary_synth.rpt"/>
+  <File Type="RDS-DCP" Name="axi_stream_to_galapagos_bridge.dcp"/>
+  <File Type="PA-TCL" Name="axi_stream_to_galapagos_bridge.tcl"/>
+  <File Type="REPORTS-TCL" Name="axi_stream_to_galapagos_bridge_reports.tcl"/>
+  <File Type="RDS-RDS" Name="axi_stream_to_galapagos_bridge.vds"/>
+  <File Type="RDS-PROPCONSTRS" Name="axi_stream_to_galapagos_bridge_drc_synth.rpt"/>
+  <File Type="RDS-UTIL" Name="axi_stream_to_galapagos_bridge_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="axi_stream_to_galapagos_bridge_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../shared-ip/data_width_converter.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/axis_galapagos_bridge.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../ip-bridge/ip_axis_galapagos_bridge/component.xml">
+      <FileInfo SFType="IPXACT"/>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="axi_stream_to_galapagos_bridge"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>

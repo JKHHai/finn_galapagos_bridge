@@ -1,0 +1,9 @@
+{
+	"version": "1.0",
+	"modules": {
+		"StreamingFCLayer_Batch_3_StreamingFCLayer_Batch_3": {
+			"proto_instances": {
+			}
+		}
+	}
+}

@@ -1,0 +1,488 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Sep  4 18:07:29 2020
+# Process ID: 30657
+# Current directory: /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1
+# Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/design_1_wrapper.vds
+# Journal file: /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/ip_deployment_test'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/mnt/Xilinx/Vivado/2019.1/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1417.414 ; gain = 28.750 ; free physical = 58409 ; free virtual = 123750
+Command: synth_design -top design_1_wrapper -part xczu19eg-ffvc1760-2-i
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu19eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu19eg'
+INFO: [Common 17-1540] The version limit for your license is '2020.05' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Device 21-403] Loading part xczu19eg-ffvc1760-2-i
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 30731 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2603.199 ; gain = 0.000 ; free physical = 57309 ; free virtual = 122650
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:21]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/synth/design_1.v:216]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_1' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/synth/design_1_xlconstant_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1 - type: integer 
+	Parameter CONST_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant' (1#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_1' (2#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_1/synth/design_1_xlconstant_0_1.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_0' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized0' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 2 - type: integer 
+	Parameter CONST_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized0' (2#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_0' (3#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_2' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/synth/design_1_xlconstant_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized1' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized1' (3#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_2' (4#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_2/synth/design_1_xlconstant_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_stream_to_galapa_0_0' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_axi_stream_to_galapa_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_stream_to_galapa_0_0' (5#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_axi_stream_to_galapa_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'debug_core_imp_1Y4J6LI' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_debug_bridge_0_1' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_debug_bridge_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_debug_bridge_0_1' (6#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_debug_bridge_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_proc_sys_reset_0_1' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_proc_sys_reset_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_proc_sys_reset_0_1' (7#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_proc_sys_reset_0_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'design_1_proc_sys_reset_0_1' has 10 connections declared, but only 7 given [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/synth/design_1.v:100]
+INFO: [Synth 8-6157] synthesizing module 'design_1_smartconnect_0_1' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_smartconnect_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_smartconnect_0_1' (8#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_smartconnect_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_3' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_zynq_ultra_ps_e_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_3' (9#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_zynq_ultra_ps_e_0_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'debug_core_imp_1Y4J6LI' (10#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/synth/design_1.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1_deployment_test_rece_0_0' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_deployment_test_rece_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_deployment_test_rece_0_0' (11#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_deployment_test_rece_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_deployment_test_sour_0_0' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_deployment_test_sour_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_deployment_test_sour_0_0' (12#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_deployment_test_sour_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_galapagos_to_axi_str_0_0' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_galapagos_to_axi_str_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_galapagos_to_axi_str_0_0' (13#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_galapagos_to_axi_str_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized2' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 784'b0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001001001010100100100101000001001010100010101010101010000110101001111111111110010000011101110111111111111100000001111100111111111111111010000111111111111101111111010000011111111111111111111000100000111111111111111111100100000011111111111111111110011000010111111111101011100001100000111111001110011000011100000111111110001101100111100000011111100101000101111100000000111110110101100110000110000101111000111110100000011000001111111111111101111110000001011111111111110000000000000010111111111111100000000000010101111111111000000000000000000111111111101000000000000110010000010010000000000000010110010010010110000000000000110111011010010000000000000010110010110011000000000 
+	Parameter CONST_WIDTH bound to: 784 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant__parameterized2' (13#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ipshared/66e7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (14#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/synth/design_1.v:304]
+INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_0' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_0_0' (15#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_util_ds_buf_0_0' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_util_ds_buf_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_util_ds_buf_0_0' (16#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_util_ds_buf_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_vio_0_0' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_vio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_vio_0_0' (17#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/.Xil/Vivado-30657-pcgrp/realtime/design_1_vio_0_0_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0'. This will prevent further optimization [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/synth/design_1.v:329]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'deployment_test_sour_0'. This will prevent further optimization [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/synth/design_1.v:280]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (18#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/synth/design_1.v:216]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (19#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2603.199 ; gain = 0.000 ; free physical = 57332 ; free virtual = 122673
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2603.199 ; gain = 0.000 ; free physical = 57329 ; free virtual = 122669
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2603.199 ; gain = 0.000 ; free physical = 57329 ; free virtual = 122669
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_deployment_test_sour_0_0/design_1_deployment_test_sour_0_0/design_1_deployment_test_sour_0_0_in_context.xdc] for cell 'design_1_i/deployment_test_sour_0'
+Finished Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_deployment_test_sour_0_0/design_1_deployment_test_sour_0_0/design_1_deployment_test_sour_0_0_in_context.xdc] for cell 'design_1_i/deployment_test_sour_0'
+Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_deployment_test_rece_0_0/design_1_deployment_test_rece_0_0/design_1_deployment_test_rece_0_0_in_context.xdc] for cell 'design_1_i/deployment_test_rece_0'
+Finished Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_deployment_test_rece_0_0/design_1_deployment_test_rece_0_0/design_1_deployment_test_rece_0_0_in_context.xdc] for cell 'design_1_i/deployment_test_rece_0'
+Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_axi_stream_to_galapa_0_0/design_1_axi_stream_to_galapa_0_0/design_1_axi_stream_to_galapa_0_0_in_context.xdc] for cell 'design_1_i/axi_stream_to_galapa_0'
+Finished Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_axi_stream_to_galapa_0_0/design_1_axi_stream_to_galapa_0_0/design_1_axi_stream_to_galapa_0_0_in_context.xdc] for cell 'design_1_i/axi_stream_to_galapa_0'
+Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_galapagos_to_axi_str_0_0/design_1_galapagos_to_axi_str_0_0/design_1_galapagos_to_axi_str_0_0_in_context.xdc] for cell 'design_1_i/galapagos_to_axi_str_0'
+Finished Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_galapagos_to_axi_str_0_0/design_1_galapagos_to_axi_str_0_0/design_1_galapagos_to_axi_str_0_0_in_context.xdc] for cell 'design_1_i/galapagos_to_axi_str_0'
+Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0/design_1_vio_0_0_in_context.xdc] for cell 'design_1_i/vio_0'
+Finished Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0/design_1_vio_0_0_in_context.xdc] for cell 'design_1_i/vio_0'
+Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Finished Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_3/design_1_zynq_ultra_ps_e_0_3/design_1_zynq_ultra_ps_e_0_3_in_context.xdc] for cell 'design_1_i/debug_core/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_3/design_1_zynq_ultra_ps_e_0_3/design_1_zynq_ultra_ps_e_0_3_in_context.xdc] for cell 'design_1_i/debug_core/zynq_ultra_ps_e_0'
+Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_1/design_1_proc_sys_reset_0_1/design_1_proc_sys_reset_0_1_in_context.xdc] for cell 'design_1_i/debug_core/proc_sys_reset_0'
+Finished Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_proc_sys_reset_0_1/design_1_proc_sys_reset_0_1/design_1_proc_sys_reset_0_1_in_context.xdc] for cell 'design_1_i/debug_core/proc_sys_reset_0'
+Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/design_1_smartconnect_0_1/design_1_smartconnect_0_1_in_context.xdc] for cell 'design_1_i/debug_core/smartconnect_0'
+Finished Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_smartconnect_0_1/design_1_smartconnect_0_1/design_1_smartconnect_0_1_in_context.xdc] for cell 'design_1_i/debug_core/smartconnect_0'
+Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_debug_bridge_0_1/design_1_debug_bridge_0_1/design_1_debug_bridge_0_1_in_context.xdc] for cell 'design_1_i/debug_core/debug_bridge_0'
+Finished Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_debug_bridge_0_1/design_1_debug_bridge_0_1/design_1_debug_bridge_0_1_in_context.xdc] for cell 'design_1_i/debug_core/debug_bridge_0'
+Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_0'
+Finished Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc] for cell 'design_1_i/util_ds_buf_0'
+Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sysclk200_p'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:28]
+WARNING: [Vivado 12-584] No ports matched 'sysclk200_n'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:29]
+WARNING: [Vivado 12-584] No ports matched 'pb_sw[0]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'pb_sw[1]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'pb_sw[2]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:36]
+WARNING: [Vivado 12-584] No ports matched 'led[0]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'led[1]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'led[2]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'led[3]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'led[4]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'led[5]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:42]
+WARNING: [Vivado 12-584] No ports matched 'led[6]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'led[7]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'led[8]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'led[9]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'clk_qsfp0_n'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'clk_qsfp0_p'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'clk_qsfp1_n'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'clk_qsfp1_p'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_rx_p[0]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_rx_n[0]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_rx_p[1]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:62]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_rx_n[1]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_rx_p[2]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_rx_n[2]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_rx_p[3]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_rx_n[3]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_tx_p[0]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_tx_n[0]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_tx_p[1]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_tx_n[1]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_tx_p[2]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_tx_n[2]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_tx_p[3]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:75]
+WARNING: [Vivado 12-584] No ports matched 'qsfp0_tx_n[3]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_rx_p[0]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_rx_n[0]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_rx_p[1]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_rx_n[1]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_rx_p[2]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:82]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_rx_n[2]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_rx_p[3]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_rx_n[3]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_tx_p[0]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_tx_n[0]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:88]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_tx_p[1]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_tx_n[1]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_tx_p[2]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_tx_n[2]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_tx_p[3]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'qsfp1_tx_n[3]'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:94]
+WARNING: [Vivado 12-584] No ports matched 'nvme_u2_north_refclk0_p'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:100]
+WARNING: [Vivado 12-584] No ports matched 'nvme_u2_north_refclk0_n'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'nvme_u2_south_refclk0_p'. [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc:102]
+Finished Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/design_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/design_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/design_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2749.727 ; gain = 0.000 ; free physical = 57206 ; free virtual = 122547
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2749.727 ; gain = 0.000 ; free physical = 57205 ; free virtual = 122546
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2749.727 ; gain = 146.527 ; free physical = 57303 ; free virtual = 122644
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu19eg-ffvc1760-2-i
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:17 ; elapsed = 00:00:24 . Memory (MB): peak = 2749.727 ; gain = 146.527 ; free physical = 57303 ; free virtual = 122644
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for sysclk100_clk_n[0]. (constraint file  /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sysclk100_clk_n[0]. (constraint file  /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for sysclk100_clk_p[0]. (constraint file  /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for sysclk100_clk_p[0]. (constraint file  /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0/design_1_util_ds_buf_0_0_in_context.xdc, line 5).
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/deployment_test_sour_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/deployment_test_rece_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_stream_to_galapa_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/galapagos_to_axi_str_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/packet. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/TID_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/TID_2. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/aresetn. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/vio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/system_ila_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/debug_core/zynq_ultra_ps_e_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/debug_core/proc_sys_reset_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/debug_core/smartconnect_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/debug_core/debug_bridge_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/util_ds_buf_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:17 ; elapsed = 00:00:25 . Memory (MB): peak = 2749.727 ; gain = 146.527 ; free physical = 57305 ; free virtual = 122645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:25 . Memory (MB): peak = 2749.727 ; gain = 146.527 ; free physical = 57305 ; free virtual = 122646
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1968 (col length:264)
+BRAMs: 1968 (col length: RAMB18 264 RAMB36 132)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 2749.727 ; gain = 146.527 ; free physical = 57296 ; free virtual = 122637
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/zynq_ultra_ps_e_0/pl_clk0' to pin 'design_1_i/debug_core/zynq_ultra_ps_e_0/bbstub_pl_clk0/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_arready' to pin 'design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_arready/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_awready' to pin 'design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_awready/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_bresp[0]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_bresp[0]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_bresp[1]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_bresp[1]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_bvalid' to pin 'design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_bvalid/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[0]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[0]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[10]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[10]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[11]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[11]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[12]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[12]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[13]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[13]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[14]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[14]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[15]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[15]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[16]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[16]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[17]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[17]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[18]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[18]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[19]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[19]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[1]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[1]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[20]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[20]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[21]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[21]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[22]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[22]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[23]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[23]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[24]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[24]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[25]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[25]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[26]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[26]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[27]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[27]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[28]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[28]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[29]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[29]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[2]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[2]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[30]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[30]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[31]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[31]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[3]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[3]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[4]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[4]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[5]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[5]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[6]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[6]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[7]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[7]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[8]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[8]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rdata[9]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rdata[9]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rresp[0]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rresp[0]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rresp[1]' to pin '{design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rresp[1]/O}'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_rvalid' to pin 'design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_rvalid/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/debug_core/debug_bridge_0/S_AXI_wready' to pin 'design_1_i/debug_core/debug_bridge_0/bbstub_S_AXI_wready/O'
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/util_ds_buf_0/IBUF_OUT[0]' to pin '{design_1_i/util_ds_buf_0/bbstub_IBUF_OUT[0]/O}'
+INFO: [Synth 8-5819] Moved 43 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:46 ; elapsed = 00:01:38 . Memory (MB): peak = 3180.648 ; gain = 577.449 ; free physical = 56695 ; free virtual = 122035
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:46 ; elapsed = 00:01:38 . Memory (MB): peak = 3180.648 ; gain = 577.449 ; free physical = 56695 ; free virtual = 122035
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:46 ; elapsed = 00:01:39 . Memory (MB): peak = 3192.930 ; gain = 589.730 ; free physical = 56692 ; free virtual = 122033
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:01:40 . Memory (MB): peak = 3206.805 ; gain = 603.605 ; free physical = 56692 ; free virtual = 122032
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:01:40 . Memory (MB): peak = 3206.805 ; gain = 603.605 ; free physical = 56692 ; free virtual = 122032
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:01:40 . Memory (MB): peak = 3206.805 ; gain = 603.605 ; free physical = 56692 ; free virtual = 122032
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:01:40 . Memory (MB): peak = 3206.805 ; gain = 603.605 ; free physical = 56692 ; free virtual = 122032
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:01:40 . Memory (MB): peak = 3206.805 ; gain = 603.605 ; free physical = 56691 ; free virtual = 122032
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:01:40 . Memory (MB): peak = 3206.805 ; gain = 603.605 ; free physical = 56691 ; free virtual = 122032
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+----------------------------------+----------+
+|      |BlackBox name                     |Instances |
++------+----------------------------------+----------+
+|1     |design_1_axi_stream_to_galapa_0_0 |         1|
+|2     |design_1_deployment_test_rece_0_0 |         1|
+|3     |design_1_deployment_test_sour_0_0 |         1|
+|4     |design_1_galapagos_to_axi_str_0_0 |         1|
+|5     |design_1_system_ila_0_0           |         1|
+|6     |design_1_util_ds_buf_0_0          |         1|
+|7     |design_1_vio_0_0                  |         1|
+|8     |design_1_debug_bridge_0_1         |         1|
+|9     |design_1_proc_sys_reset_0_1       |         1|
+|10    |design_1_smartconnect_0_1         |         1|
+|11    |design_1_zynq_ultra_ps_e_0_3      |         1|
++------+----------------------------------+----------+
+
+Report Cell Usage: 
++------+----------------------------------+------+
+|      |Cell                              |Count |
++------+----------------------------------+------+
+|1     |design_1_axi_stream_to_galapa_0_0 |     1|
+|2     |design_1_debug_bridge_0_1         |     1|
+|3     |design_1_deployment_test_rece_0_0 |     1|
+|4     |design_1_deployment_test_sour_0_0 |     1|
+|5     |design_1_galapagos_to_axi_str_0_0 |     1|
+|6     |design_1_proc_sys_reset_0_1       |     1|
+|7     |design_1_smartconnect_0_1         |     1|
+|8     |design_1_system_ila_0_0           |     1|
+|9     |design_1_util_ds_buf_0_0          |     1|
+|10    |design_1_vio_0_0                  |     1|
+|11    |design_1_zynq_ultra_ps_e_0_3      |     1|
++------+----------------------------------+------+
+
+Report Instance Areas: 
++------+---------------+------------------------+------+
+|      |Instance       |Module                  |Cells |
++------+---------------+------------------------+------+
+|1     |top            |                        |  1411|
+|2     |  design_1_i   |design_1                |  1411|
+|3     |    TID_1      |design_1_xlconstant_0_1 |     0|
+|4     |    TID_2      |design_1_xlconstant_1_0 |     0|
+|5     |    aresetn    |design_1_xlconstant_0_2 |     0|
+|6     |    packet     |design_1_xlconstant_0_0 |     0|
+|7     |    debug_core |debug_core_imp_1Y4J6LI  |   641|
++------+---------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:01:40 . Memory (MB): peak = 3206.805 ; gain = 603.605 ; free physical = 56691 ; free virtual = 122032
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:01:27 . Memory (MB): peak = 3206.805 ; gain = 457.078 ; free physical = 56730 ; free virtual = 122070
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:01:40 . Memory (MB): peak = 3206.812 ; gain = 603.605 ; free physical = 56743 ; free virtual = 122084
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3256.430 ; gain = 0.000 ; free physical = 56655 ; free virtual = 121996
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+106 Infos, 58 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:02:13 . Memory (MB): peak = 3268.398 ; gain = 1805.547 ; free physical = 56748 ; free virtual = 122089
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3268.398 ; gain = 0.000 ; free physical = 56748 ; free virtual = 122089
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Sep  4 18:10:07 2020...

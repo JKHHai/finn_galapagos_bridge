@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Wed Sep  2 00:57:08 2020
+# Process ID: 28963
+# Current directory: /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_receiving_block/deployment_test_receiving_block.runs/synth_1
+# Command line: vivado -log deployment_test_receiving_block.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source deployment_test_receiving_block.tcl
+# Log file: /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_receiving_block/deployment_test_receiving_block.runs/synth_1/deployment_test_receiving_block.vds
+# Journal file: /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_receiving_block/deployment_test_receiving_block.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source deployment_test_receiving_block.tcl -notrace

@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_receiving_block/deployment_test_receiving_block.sim/sim_1/synth/func/xsim/tb_deployment_test_receiving_block_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module deployment_test_receiving_block
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_receiving_block/deployment_test_receiving_block.srcs/sim_1/new/tb_deployment_test_receiving_block.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_deployment_test_receiving_block

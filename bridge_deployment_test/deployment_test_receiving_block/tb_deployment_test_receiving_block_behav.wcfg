@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="tb_deployment_test_receiving_block_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="tb_deployment_test_receiving_block" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="550000000fs"></ZoomStartTime>
+      <ZoomEndTime time="1181429244fs"></ZoomEndTime>
+      <Cursor1Time time="150000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wvobject type="logic" fp_name="/tb_deployment_test_receiving_block/r_clock">
+      <obj_property name="ElementShortName">r_clock</obj_property>
+      <obj_property name="ObjectShortName">r_clock</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_deployment_test_receiving_block/r_reset">
+      <obj_property name="ElementShortName">r_reset</obj_property>
+      <obj_property name="ObjectShortName">r_reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_deployment_test_receiving_block/w_clock">
+      <obj_property name="ElementShortName">w_clock</obj_property>
+      <obj_property name="ObjectShortName">w_clock</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_deployment_test_receiving_block/w_reset">
+      <obj_property name="ElementShortName">w_reset</obj_property>
+      <obj_property name="ObjectShortName">w_reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_deployment_test_receiving_block/r_test_axis_tvalid">
+      <obj_property name="ElementShortName">r_test_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">r_test_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_deployment_test_receiving_block/w_test_axis_tready">
+      <obj_property name="ElementShortName">w_test_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">w_test_axis_tready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_deployment_test_receiving_block/r_test_axis_tdata">
+      <obj_property name="ElementShortName">r_test_axis_tdata[55:0]</obj_property>
+      <obj_property name="ObjectShortName">r_test_axis_tdata[55:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_deployment_test_receiving_block/r_expected_packet">
+      <obj_property name="ElementShortName">r_expected_packet[783:0]</obj_property>
+      <obj_property name="ObjectShortName">r_expected_packet[783:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_deployment_test_receiving_block/r_test_packet">
+      <obj_property name="ElementShortName">r_test_packet[783:0]</obj_property>
+      <obj_property name="ObjectShortName">r_test_packet[783:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_deployment_test_receiving_block/r_num_transfers_sent">
+      <obj_property name="ElementShortName">r_num_transfers_sent[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_num_transfers_sent[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_deployment_test_receiving_block/w_test_axis_tvalid">
+      <obj_property name="ElementShortName">w_test_axis_tvalid</obj_property>
+      <obj_property name="ObjectShortName">w_test_axis_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_deployment_test_receiving_block/w_test_axis_tready">
+      <obj_property name="ElementShortName">w_test_axis_tready</obj_property>
+      <obj_property name="ObjectShortName">w_test_axis_tready</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_deployment_test_receiving_block/w_test_axis_tdata">
+      <obj_property name="ElementShortName">w_test_axis_tdata[55:0]</obj_property>
+      <obj_property name="ObjectShortName">w_test_axis_tdata[55:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_deployment_test_receiving_block/w_expected_packet">
+      <obj_property name="ElementShortName">w_expected_packet[783:0]</obj_property>
+      <obj_property name="ObjectShortName">w_expected_packet[783:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_deployment_test_receiving_block/w_result_tvalid">
+      <obj_property name="ElementShortName">w_result_tvalid</obj_property>
+      <obj_property name="ObjectShortName">w_result_tvalid</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_deployment_test_receiving_block/w_result_pass">
+      <obj_property name="ElementShortName">w_result_pass[7:0]</obj_property>
+      <obj_property name="ObjectShortName">w_result_pass[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="divider305" type="divider">
+      <obj_property name="label">DUT</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/tb_deployment_test_receiving_block/DUT/r_core_state">
+      <obj_property name="ElementShortName">r_core_state</obj_property>
+      <obj_property name="ObjectShortName">r_core_state</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_deployment_test_receiving_block/DUT/r_num_transfers_received">
+      <obj_property name="ElementShortName">r_num_transfers_received[31:0]</obj_property>
+      <obj_property name="ObjectShortName">r_num_transfers_received[31:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_deployment_test_receiving_block/DUT/w_test_axis_tdata_shifted">
+      <obj_property name="ElementShortName">w_test_axis_tdata_shifted[783:0]</obj_property>
+      <obj_property name="ObjectShortName">w_test_axis_tdata_shifted[783:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_deployment_test_receiving_block/DUT/i_test_axis_TDATA">
+      <obj_property name="ElementShortName">i_test_axis_TDATA[55:0]</obj_property>
+      <obj_property name="ObjectShortName">i_test_axis_TDATA[55:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_deployment_test_receiving_block/DUT/r_received_packet">
+      <obj_property name="ElementShortName">r_received_packet[783:0]</obj_property>
+      <obj_property name="ObjectShortName">r_received_packet[783:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_deployment_test_receiving_block/DUT/i_expected_packet">
+      <obj_property name="ElementShortName">i_expected_packet[783:0]</obj_property>
+      <obj_property name="ObjectShortName">i_expected_packet[783:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

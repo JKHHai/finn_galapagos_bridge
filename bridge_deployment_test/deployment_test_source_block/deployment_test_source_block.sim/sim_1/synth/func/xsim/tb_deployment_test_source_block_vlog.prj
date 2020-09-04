@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_deployment_test_source_block_func_synth.v" \
+
+sv xil_defaultlib  \
+"../../../../../deployment_test_source_block.srcs/sim_1/new/tb_deployment_test_source_block.sv" \
+
+# Do not sort compile order
+nosort

@@ -40,8 +40,8 @@ module axi_stream_to_galapagos_bridge
         input i_gp_TREADY,
         output [GALAPAGOS_DATA_WIDTH-1:0] o_gp_TDATA,
         output [(GALAPAGOS_DATA_WIDTH/8)-1:0] o_gp_TKEEP,
-        output [7:0] o_gp_TDEST,
-        output [7:0] o_gp_TID,
+        output [31:0] o_gp_TDEST,
+        output [31:0] o_gp_TID,
         output o_gp_TLAST
     );
     

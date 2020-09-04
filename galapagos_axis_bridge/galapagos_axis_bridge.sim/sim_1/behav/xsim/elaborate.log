@@ -1,15 +1,15 @@
-Vivado Simulator 2018.3
-Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
-Running: /home/justin/jhai/Xilinx/Vivado/2018.3/bin/unwrapped/lnx64.o/xelab -wto fe4a957941ce4793b0aa5a42cedbc936 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_gp_axis_bridge_behav xil_defaultlib.tb_gp_axis_bridge xil_defaultlib.glbl -log elaborate.log 
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /opt/mnt/Xilinx/Vivado/2019.1/bin/unwrapped/lnx64.o/xelab -wto fe4a957941ce4793b0aa5a42cedbc936 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_gp_axis_bridge_behav xil_defaultlib.tb_gp_axis_bridge xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
-WARNING: [VRFC 10-2861] module 'galapagos_to_axi_stream_bridge' does not have a parameter named GALAPAGOS_TID [/home/justin/jhai/paulchowresearch2020/Galapagos/finn_galapagos_bridge/galapagos_axis_bridge/galapagos_axis_bridge.srcs/sim_1/imports/shared-ip/tb_gp_axis_bridge.sv:77]
+WARNING: [VRFC 10-2861] module 'galapagos_to_axi_stream_bridge' does not have a parameter named GALAPAGOS_TID [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/galapagos_axis_bridge/galapagos_axis_bridge.srcs/sim_1/imports/shared-ip/tb_gp_axis_bridge.sv:77]
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.data_width_converter(OUTPUT_WIDT...
-Compiling module xil_defaultlib.galapagos_to_axi_stream_bridge(G...
+Compiling module xil_defaultlib.data_width_converter(INPUT_WIDTH...
+Compiling module xil_defaultlib.galapagos_to_axi_stream_bridge_d...
 Compiling module xil_defaultlib.tb_gp_axis_bridge
 Compiling module xil_defaultlib.glbl
 Built simulation snapshot tb_gp_axis_bridge_behav

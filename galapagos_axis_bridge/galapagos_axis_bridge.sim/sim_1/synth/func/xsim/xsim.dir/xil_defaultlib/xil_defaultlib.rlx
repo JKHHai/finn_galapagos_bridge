@@ -1,0 +1,6 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/galapagos_axis_bridge/galapagos_axis_bridge.sim/sim_1/synth/func/xsim/tb_gp_axis_bridge_func_synth.v,1599241935,verilog,,,,data_width_converter;galapagos_to_axi_stream_bridge;glbl,,,,,,,,
+/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/galapagos_axis_bridge/galapagos_axis_bridge.srcs/sim_1/imports/shared-ip/tb_gp_axis_bridge.sv,1599241674,systemVerilog,,,,tb_gp_axis_bridge,,,,,,,,

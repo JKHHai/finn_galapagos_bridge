@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (lin64) Build 2552052 Fri May 24 14:47:09 MDT 2019
-| Date         : Wed Sep  2 00:29:34 2020
+| Date         : Fri Sep  4 16:43:20 2020
 | Host         : pcgrp running 64-bit Ubuntu 16.04.6 LTS
 | Command      : report_utilization -file axi_stream_to_galapagos_bridge_utilization_synth.rpt -pb axi_stream_to_galapagos_bridge_utilization_synth.pb
 | Design       : axi_stream_to_galapagos_bridge
@@ -97,7 +97,7 @@ Table of Contents
 +------------+------+-------+-----------+--------+
 |  Site Type | Used | Fixed | Available |  Util% |
 +------------+------+-------+-----------+--------+
-| Bonded IOB |  679 |     0 |       624 | 108.81 |
+| Bonded IOB |  775 |     0 |       624 | 124.20 |
 +------------+------+-------+-----------+--------+
 
 
@@ -156,11 +156,11 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| OBUF     |  595 |                 I/O |
+| OBUF     |  643 |                 I/O |
 | FDRE     |  271 |            Register |
 | LUT3     |  137 |                 CLB |
-| INBUF    |   84 |                 I/O |
-| IBUFCTRL |   84 |              Others |
+| INBUF    |  132 |                 I/O |
+| IBUFCTRL |  132 |              Others |
 | LUT2     |   70 |                 CLB |
 | LUT6     |    4 |                 CLB |
 | LUT5     |    2 |                 CLB |

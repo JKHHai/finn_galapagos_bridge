@@ -22,9 +22,9 @@
 
 module tb_gp_axis_bridge();
     // Declarations
-    parameter galapagos_data_width = 32;
-    parameter galapagos_num_transfers = 2; // 512 bits in total
-    parameter axi_stream_data_width = 16;
+    parameter galapagos_data_width = 512;
+    parameter galapagos_num_transfers = 1; // 512 bits in total
+    parameter axi_stream_data_width = 64;
     parameter galapagos_tid = 4;
     // Registers - Global
     reg r_clock, r_reset;
@@ -35,8 +35,8 @@ module tb_gp_axis_bridge();
     reg r_galapagos_tvalid;
     reg [galapagos_data_width-1:0] r_galapagos_tdata;
     reg [(galapagos_data_width-1)/8:0] r_galapagos_tkeep;
-    reg [7:0] r_galapagos_tdest;
-    reg [7:0] r_galapagos_tid;
+    reg [31:0] r_galapagos_tdest;
+    reg [31:0] r_galapagos_tid;
     reg r_galapagos_tlast;
     // Wires - Galapagos
     wire [31:0] w_core_tid;
@@ -44,8 +44,8 @@ module tb_gp_axis_bridge();
     wire w_galapagos_tready;
     wire [galapagos_data_width-1:0] w_galapagos_tdata;
     wire [(galapagos_data_width-1)/8:0] w_galapagos_tkeep;
-    wire [7:0] w_galapagos_tdest;
-    wire [7:0] w_galapagos_tid;
+    wire [31:0] w_galapagos_tdest;
+    wire [31:0] w_galapagos_tid;
     wire w_galapagos_tlast;
     // Registers - AXI-Stream
     reg r_axis_tready;
@@ -125,18 +125,18 @@ module tb_gp_axis_bridge();
         // Expected output:
         // 0xefab
         // 0x0fff
-          #60 r_galapagos_tdata = 32'hABCDEFAB;
-          r_galapagos_tkeep = 4'b1111;
-          r_galapagos_tdest = galapagos_tid;
-          r_galapagos_tid = 1;
-          r_galapagos_tlast = 0;
-          r_galapagos_tvalid = 1'b1;
-          #60 r_galapagos_tdata = 32'hFFFFFFFF;
-          r_galapagos_tkeep = 4'b0111;
-          r_galapagos_tdest = galapagos_tid;
-          r_galapagos_tid = 1;
-          r_galapagos_tlast = 1;
-          r_galapagos_tvalid = 1'b1;
+//          #60 r_galapagos_tdata = 32'hABCDEFAB;
+//          r_galapagos_tkeep = 4'b1111;
+//          r_galapagos_tdest = galapagos_tid;
+//          r_galapagos_tid = 1;
+//          r_galapagos_tlast = 0;
+//          r_galapagos_tvalid = 1'b1;
+//          #60 r_galapagos_tdata = 32'hFFFFFFFF;
+//          r_galapagos_tkeep = 4'b0111;
+//          r_galapagos_tdest = galapagos_tid;
+//          r_galapagos_tid = 1;
+//          r_galapagos_tlast = 1;
+//          r_galapagos_tvalid = 1'b1;
 
         // // Test Wrong Address
         // set galapagos_data_width = 32;
@@ -154,12 +154,12 @@ module tb_gp_axis_bridge();
         // set galapagos_num_transfers = 1; // 512 bits in total
         // set axi_stream_data_width = 64;
         // Expected output: 0xABCDEFABABCDEFAB
-//       #60 r_galapagos_tdata = 512'hABCDEFABABCDEFAB;
-//       r_galapagos_tkeep = 64'hFF;
-//       r_galapagos_tdest = galapagos_tid;
-//       r_galapagos_tid = 1;
-//       r_galapagos_tlast = 1;
-//       r_galapagos_tvalid = 1'b1;
+       #60 r_galapagos_tdata = 512'hABCDEFABABCDEFAB;
+       r_galapagos_tkeep = 64'hFF;
+       r_galapagos_tdest = galapagos_tid;
+       r_galapagos_tid = 1;
+       r_galapagos_tlast = 1;
+       r_galapagos_tvalid = 1'b1;
 
         #1000 $finish;
     end  

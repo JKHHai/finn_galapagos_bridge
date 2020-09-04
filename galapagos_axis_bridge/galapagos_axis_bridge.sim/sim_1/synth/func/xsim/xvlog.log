@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/galapagos_axis_bridge/galapagos_axis_bridge.sim/sim_1/synth/func/xsim/tb_gp_axis_bridge_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module data_width_converter
+INFO: [VRFC 10-311] analyzing module galapagos_to_axi_stream_bridge
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/galapagos_axis_bridge/galapagos_axis_bridge.srcs/sim_1/imports/shared-ip/tb_gp_axis_bridge.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_gp_axis_bridge

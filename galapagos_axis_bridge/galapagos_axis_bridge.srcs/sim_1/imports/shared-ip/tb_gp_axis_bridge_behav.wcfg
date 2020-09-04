@@ -11,15 +11,15 @@
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="601705454fs"></ZoomEndTime>
-      <Cursor1Time time="170000000fs"></Cursor1Time>
+      <ZoomStartTime time="483158408fs"></ZoomStartTime>
+      <ZoomEndTime time="1175368319fs"></ZoomEndTime>
+      <Cursor1Time time="1060000000fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="169"></NameColumnWidth>
+      <NameColumnWidth column_width="165"></NameColumnWidth>
       <ValueColumnWidth column_width="66"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="21" />
+   <WVObjectSize size="24" />
    <wvobject type="logic" fp_name="/tb_gp_axis_bridge/r_clock">
       <obj_property name="ElementShortName">r_clock</obj_property>
       <obj_property name="ObjectShortName">r_clock</obj_property>
@@ -37,12 +37,12 @@
       <obj_property name="ObjectShortName">w_galapagos_tready</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb_gp_axis_bridge/r_galapagos_tdata">
-      <obj_property name="ElementShortName">r_galapagos_tdata[31:0]</obj_property>
-      <obj_property name="ObjectShortName">r_galapagos_tdata[31:0]</obj_property>
+      <obj_property name="ElementShortName">r_galapagos_tdata[511:0]</obj_property>
+      <obj_property name="ObjectShortName">r_galapagos_tdata[511:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb_gp_axis_bridge/r_galapagos_tkeep">
-      <obj_property name="ElementShortName">r_galapagos_tkeep[3:0]</obj_property>
-      <obj_property name="ObjectShortName">r_galapagos_tkeep[3:0]</obj_property>
+      <obj_property name="ElementShortName">r_galapagos_tkeep[63:0]</obj_property>
+      <obj_property name="ObjectShortName">r_galapagos_tkeep[63:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb_gp_axis_bridge/r_galapagos_tdest">
       <obj_property name="ElementShortName">r_galapagos_tdest[7:0]</obj_property>
@@ -65,8 +65,8 @@
       <obj_property name="ObjectShortName">r_axis_tready</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb_gp_axis_bridge/r_axis_tdata">
-      <obj_property name="ElementShortName">r_axis_tdata[15:0]</obj_property>
-      <obj_property name="ObjectShortName">r_axis_tdata[15:0]</obj_property>
+      <obj_property name="ElementShortName">r_axis_tdata[63:0]</obj_property>
+      <obj_property name="ObjectShortName">r_axis_tdata[63:0]</obj_property>
    </wvobject>
    <wvobject fp_name="divider360" type="divider">
       <obj_property name="label">DUT</obj_property>
@@ -85,6 +85,18 @@
       <obj_property name="ElementShortName">o_gp_TREADY</obj_property>
       <obj_property name="ObjectShortName">o_gp_TREADY</obj_property>
    </wvobject>
+   <wvobject type="array" fp_name="/tb_gp_axis_bridge/DUT/i_core_TID">
+      <obj_property name="ElementShortName">i_core_TID[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_core_TID[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_gp_axis_bridge/DUT/i_gp_TDEST">
+      <obj_property name="ElementShortName">i_gp_TDEST[31:0]</obj_property>
+      <obj_property name="ObjectShortName">i_gp_TDEST[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/tb_gp_axis_bridge/DUT/r_core_state">
+      <obj_property name="ElementShortName">r_core_state[1:0]</obj_property>
+      <obj_property name="ObjectShortName">r_core_state[1:0]</obj_property>
+   </wvobject>
    <wvobject fp_name="divider24" type="divider">
       <obj_property name="label">DATA WIDTH CONVERTER</obj_property>
       <obj_property name="DisplayName">label</obj_property>
@@ -98,12 +110,12 @@
       <obj_property name="ObjectShortName">o_input_ready</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb_gp_axis_bridge/DUT/dwc/i_input_data">
-      <obj_property name="ElementShortName">i_input_data[63:0]</obj_property>
-      <obj_property name="ObjectShortName">i_input_data[63:0]</obj_property>
+      <obj_property name="ElementShortName">i_input_data[511:0]</obj_property>
+      <obj_property name="ObjectShortName">i_input_data[511:0]</obj_property>
    </wvobject>
    <wvobject type="array" fp_name="/tb_gp_axis_bridge/DUT/dwc/i_input_keep">
-      <obj_property name="ElementShortName">i_input_keep[7:0]</obj_property>
-      <obj_property name="ObjectShortName">i_input_keep[7:0]</obj_property>
+      <obj_property name="ElementShortName">i_input_keep[63:0]</obj_property>
+      <obj_property name="ObjectShortName">i_input_keep[63:0]</obj_property>
       <obj_property name="Radix">BINARYRADIX</obj_property>
    </wvobject>
 </wave_config>

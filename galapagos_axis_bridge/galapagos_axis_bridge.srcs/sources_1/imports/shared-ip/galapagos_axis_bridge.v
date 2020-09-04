@@ -34,8 +34,8 @@ module galapagos_to_axi_stream_bridge
         output o_gp_TREADY,
         input [GALAPAGOS_DATA_WIDTH-1:0] i_gp_TDATA,
         input [(GALAPAGOS_DATA_WIDTH-1)/8:0] i_gp_TKEEP,
-        input [7:0] i_gp_TDEST,
-        input [7:0] i_gp_TID,
+        input [31:0] i_gp_TDEST,
+        input [31:0] i_gp_TID,
         input i_gp_TLAST,
         // AXI-Stream
         output o_axis_TVALID,

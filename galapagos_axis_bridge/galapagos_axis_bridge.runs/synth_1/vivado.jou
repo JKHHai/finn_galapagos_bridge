@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Sep  4 17:49:22 2020
+# Process ID: 26155
+# Current directory: /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/galapagos_axis_bridge/galapagos_axis_bridge.runs/synth_1
+# Command line: vivado -log galapagos_to_axi_stream_bridge.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source galapagos_to_axi_stream_bridge.tcl
+# Log file: /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/galapagos_axis_bridge/galapagos_axis_bridge.runs/synth_1/galapagos_to_axi_stream_bridge.vds
+# Journal file: /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/galapagos_axis_bridge/galapagos_axis_bridge.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source galapagos_to_axi_stream_bridge.tcl -notrace

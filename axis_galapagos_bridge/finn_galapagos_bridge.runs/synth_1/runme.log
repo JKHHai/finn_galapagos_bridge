@@ -22,9 +22,9 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xcku115'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku115'
 INFO: [Common 17-1540] The version limit for your license is '2020.02' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 13441 
+INFO: Helper process launched with PID 1990 
 ---------------------------------------------------------------------------------
-Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1626.000 ; gain = 166.625 ; free physical = 59986 ; free virtual = 125326
+Starting Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1626.035 ; gain = 167.656 ; free physical = 60381 ; free virtual = 125722
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-6157] synthesizing module 'axi_stream_to_galapagos_bridge' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.srcs/sources_1/new/axis_galapagos_bridge.v:23]
 	Parameter AXI_STREAM_DATA_WIDTH bound to: 64 - type: integer 
@@ -45,59 +45,11 @@ INFO: [Synth 8-155] case statement is not full and has no default [/home/justin/
 INFO: [Synth 8-6155] done synthesizing module 'data_width_converter' (1#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/shared-ip/data_width_converter.v:27]
 INFO: [Synth 8-155] case statement is not full and has no default [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.srcs/sources_1/new/axis_galapagos_bridge.v:138]
 INFO: [Synth 8-6155] done synthesizing module 'axi_stream_to_galapagos_bridge' (2#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.srcs/sources_1/new/axis_galapagos_bridge.v:23]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[31]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[30]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[29]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[28]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[27]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[26]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[25]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[24]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[23]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[22]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[21]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[20]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[19]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[18]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[17]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[16]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[15]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[14]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[13]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[12]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[11]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[10]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[9]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[8]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[31]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[30]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[29]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[28]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[27]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[26]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[25]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[24]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[23]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[22]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[21]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[20]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[19]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[18]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[17]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[16]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[15]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[14]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[13]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[12]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[11]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[10]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[9]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[8]
 ---------------------------------------------------------------------------------
-Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1679.750 ; gain = 220.375 ; free physical = 60009 ; free virtual = 125350
+Finished Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1679.785 ; gain = 221.406 ; free physical = 60404 ; free virtual = 125745
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1685.688 ; gain = 226.312 ; free physical = 60007 ; free virtual = 125347
+Finished Constraint Validation : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1685.723 ; gain = 227.344 ; free physical = 60402 ; free virtual = 125743
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -106,7 +58,7 @@ Loading part: xcku115-flva1517-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 INFO: [Device 21-403] Loading part xcku115-flva1517-2-e
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1703.598 ; gain = 244.223 ; free physical = 60006 ; free virtual = 125347
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1705.633 ; gain = 247.254 ; free physical = 60402 ; free virtual = 125742
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-4471] merging register 'r_output_last_reg' into 'r_output_valid_reg' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/shared-ip/data_width_converter.v:83]
 INFO: [Synth 8-802] inferred FSM for state register 'r_core_state_reg' in module 'data_width_converter'
@@ -128,7 +80,7 @@ STATE_OUTPUT_TRANSMISSION |                              100 |                  
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'r_core_state_reg' using encoding 'one-hot' in module 'axi_stream_to_galapagos_bridge'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1711.605 ; gain = 252.230 ; free physical = 59991 ; free virtual = 125331
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1705.633 ; gain = 247.254 ; free physical = 60386 ; free virtual = 125727
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -214,54 +166,6 @@ No constraint files found.
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[31]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[30]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[29]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[28]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[27]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[26]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[25]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[24]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[23]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[22]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[21]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[20]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[19]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[18]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[17]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[16]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[15]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[14]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[13]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[12]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[11]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[10]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[9]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TID[8]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[31]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[30]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[29]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[28]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[27]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[26]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[25]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[24]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[23]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[22]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[21]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[20]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[19]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[18]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[17]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[16]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[15]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[14]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[13]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[12]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[11]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[10]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[9]
-WARNING: [Synth 8-3331] design axi_stream_to_galapagos_bridge has unconnected port i_core_TDEST[8]
 INFO: [Synth 8-3886] merging instance 'dwc/r_input_keep_reg[0]' (FDRE) to 'dwc/r_input_keep_reg[1]'
 INFO: [Synth 8-3886] merging instance 'dwc/r_input_keep_reg[1]' (FDRE) to 'dwc/r_input_keep_reg[2]'
 INFO: [Synth 8-3886] merging instance 'dwc/r_input_keep_reg[2]' (FDRE) to 'dwc/r_input_keep_reg[3]'
@@ -365,7 +269,7 @@ INFO: [Synth 8-3886] merging instance 'dwc/r_output_data_reg[100]' (FDRE) to 'dw
 INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (\dwc/r_output_data_reg[511] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59405 ; free virtual = 124745
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 2165.961 ; gain = 707.582 ; free physical = 59851 ; free virtual = 125192
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -378,7 +282,7 @@ No constraint files found.
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59405 ; free virtual = 124745
+Finished Timing Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:28 . Memory (MB): peak = 2171.898 ; gain = 713.520 ; free physical = 59851 ; free virtual = 125191
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -390,7 +294,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:29 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59405 ; free virtual = 124745
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 2171.898 ; gain = 713.520 ; free physical = 59851 ; free virtual = 125192
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -414,7 +318,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59405 ; free virtual = 124745
+Finished IO Insertion : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 2174.867 ; gain = 716.488 ; free physical = 59847 ; free virtual = 125188
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -427,7 +331,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59405 ; free virtual = 124745
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 2174.867 ; gain = 716.488 ; free physical = 59847 ; free virtual = 125187
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -439,25 +343,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59405 ; free virtual = 124745
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 2174.867 ; gain = 716.488 ; free physical = 59847 ; free virtual = 125187
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59405 ; free virtual = 124745
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 2174.867 ; gain = 716.488 ; free physical = 59846 ; free virtual = 125187
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59405 ; free virtual = 124745
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 2174.867 ; gain = 716.488 ; free physical = 59846 ; free virtual = 125187
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59405 ; free virtual = 124745
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 2174.867 ; gain = 716.488 ; free physical = 59846 ; free virtual = 125187
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -482,41 +386,41 @@ Report Cell Usage:
 |7     |LUT6 |     4|
 |8     |FDRE |   271|
 |9     |FDSE |     2|
-|10    |IBUF |    84|
-|11    |OBUF |   595|
+|10    |IBUF |   132|
+|11    |OBUF |   643|
 +------+-----+------+
 
 Report Instance Areas: 
 +------+---------+---------------------+------+
 |      |Instance |Module               |Cells |
 +------+---------+---------------------+------+
-|1     |top      |                     |  1168|
+|1     |top      |                     |  1264|
 |2     |  dwc    |data_width_converter |   343|
 +------+---------+---------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59404 ; free virtual = 124745
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 2174.867 ; gain = 716.488 ; free physical = 59846 ; free virtual = 125187
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 96 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2176.098 ; gain = 716.723 ; free physical = 59406 ; free virtual = 124746
-Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:31 . Memory (MB): peak = 2176.105 ; gain = 716.723 ; free physical = 59406 ; free virtual = 124746
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 2174.867 ; gain = 716.488 ; free physical = 59848 ; free virtual = 125189
+Synthesis Optimization Complete : Time (s): cpu = 00:00:17 ; elapsed = 00:00:30 . Memory (MB): peak = 2174.875 ; gain = 716.488 ; free physical = 59848 ; free virtual = 125189
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 85 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 133 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2302.562 ; gain = 0.000 ; free physical = 59335 ; free virtual = 124675
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2302.332 ; gain = 0.000 ; free physical = 59789 ; free virtual = 125130
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 85 instances were transformed.
+  A total of 133 instances were transformed.
   BUFG => BUFGCE: 1 instances
-  IBUF => IBUF (IBUFCTRL, INBUF): 84 instances
+  IBUF => IBUF (IBUFCTRL, INBUF): 132 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-127 Infos, 98 Warnings, 0 Critical Warnings and 0 Errors encountered.
+127 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:34 . Memory (MB): peak = 2302.562 ; gain = 897.055 ; free physical = 59434 ; free virtual = 124774
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2302.562 ; gain = 0.000 ; free physical = 59434 ; free virtual = 124774
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:33 . Memory (MB): peak = 2302.332 ; gain = 895.852 ; free physical = 59888 ; free virtual = 125229
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2302.332 ; gain = 0.000 ; free physical = 59888 ; free virtual = 125229
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/axis_galapagos_bridge/finn_galapagos_bridge.runs/synth_1/axi_stream_to_galapagos_bridge.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file axi_stream_to_galapagos_bridge_utilization_synth.rpt -pb axi_stream_to_galapagos_bridge_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Sep  2 00:29:34 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Sep  4 16:43:21 2020...

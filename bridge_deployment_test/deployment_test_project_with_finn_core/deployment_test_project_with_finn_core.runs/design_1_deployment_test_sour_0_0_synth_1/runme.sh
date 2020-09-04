@@ -20,7 +20,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/design_1_deployment_test_sour_0_0_synth_1'
+HD_PWD='/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.runs/design_1_deployment_test_sour_0_0_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -2,32 +2,36 @@
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 TLS
 #  -string -flagsOSRD
-preplace port sysclk100 -pg 1 -lvl 0 -x -270 -y 200 -defaultsOSRD
-preplace inst packet -pg 1 -lvl 2 -x 120 -y 280 -defaultsOSRD
-preplace inst deployment_test_sour_0 -pg 1 -lvl 3 -x 420 -y 350 -defaultsOSRD
-preplace inst TID_1 -pg 1 -lvl 3 -x 420 -y 120 -defaultsOSRD
-preplace inst TID_2 -pg 1 -lvl 3 -x 420 -y 220 -defaultsOSRD
-preplace inst aresetn -pg 1 -lvl 2 -x 120 -y 180 -defaultsOSRD
-preplace inst vio_0 -pg 1 -lvl 2 -x 120 -y 380 -defaultsOSRD
-preplace inst system_ila_0 -pg 1 -lvl 7 -x 1650 -y 330 -defaultsOSRD
-preplace inst debug_core -pg 1 -lvl 6 -x 1370 -y 560 -defaultsOSRD
-preplace inst deployment_test_rece_0 -pg 1 -lvl 6 -x 1370 -y 420 -defaultsOSRD
-preplace inst axi_stream_to_galapa_0 -pg 1 -lvl 4 -x 750 -y 100 -defaultsOSRD
-preplace inst galapagos_to_axi_str_0 -pg 1 -lvl 5 -x 1050 -y 190 -defaultsOSRD
-preplace inst util_ds_buf_0 -pg 1 -lvl 1 -x -120 -y 200 -defaultsOSRD
-preplace netloc packet_dout 1 2 4 230 450 NJ 450 NJ 450 NJ
+preplace port sysclk100 -pg 1 -lvl 0 -x -440 -y 200 -defaultsOSRD
+preplace inst input_packet -pg 1 -lvl 2 -x -50 -y 280 -defaultsOSRD
+preplace inst deployment_test_sour_0 -pg 1 -lvl 3 -x 240 -y 350 -defaultsOSRD
+preplace inst TID_1 -pg 1 -lvl 3 -x 240 -y 120 -defaultsOSRD
+preplace inst TID_2 -pg 1 -lvl 3 -x 240 -y 220 -defaultsOSRD
+preplace inst aresetn -pg 1 -lvl 2 -x -50 -y 180 -defaultsOSRD
+preplace inst vio_0 -pg 1 -lvl 2 -x -50 -y 380 -defaultsOSRD
+preplace inst system_ila_0 -pg 1 -lvl 7 -x 1450 -y 330 -defaultsOSRD
+preplace inst debug_core -pg 1 -lvl 6 -x 1160 -y 560 -defaultsOSRD
+preplace inst deployment_test_rece_0 -pg 1 -lvl 6 -x 1160 -y 420 -defaultsOSRD
+preplace inst axi_stream_to_galapa_0 -pg 1 -lvl 4 -x 570 -y 100 -defaultsOSRD
+preplace inst galapagos_to_axi_str_0 -pg 1 -lvl 5 -x 850 -y 190 -defaultsOSRD
+preplace inst util_ds_buf_0 -pg 1 -lvl 1 -x -290 -y 200 -defaultsOSRD
+preplace inst StreamingFCLayer_Bat_0 -pg 1 -lvl 4 -x 570 -y 350 -defaultsOSRD
+preplace inst expected_output_packet -pg 1 -lvl 5 -x 850 -y 470 -defaultsOSRD
+preplace netloc packet_dout 1 2 1 60 280n
 preplace netloc TID_1_dout 1 3 1 NJ 120
-preplace netloc TID_2_dout 1 3 2 620 220 NJ
-preplace netloc aresetn_dout 1 2 5 250 60 600 -10 890 290 1180 330 1530J
-preplace netloc i_clock_1 1 1 6 10 440 240 440 590 0 880 90 1200 310 1540J
+preplace netloc TID_2_dout 1 3 2 430 220 NJ
+preplace netloc aresetn_dout 1 2 5 80 60 420 200 720 310 980 320 1330J
+preplace netloc i_clock_1 1 1 6 -160 440 70 440 410 0 700 90 1000 330 1320J
 preplace netloc vio_0_probe_out0 1 2 1 NJ 380
+preplace netloc expected_output_packet_dout 1 5 1 990 450n
 preplace netloc CLK_IN_D_0_1 1 0 1 N 200
-preplace netloc deployment_test_sour_0_o_test_axis 1 3 4 610 280 NJ 280 NJ 280 NJ
-preplace netloc deployment_test_rece_0_o_result 1 6 1 1550 340n
-preplace netloc galapagos_to_axi_str_0_o_axis 1 5 2 1190 320 NJ
-preplace netloc axi_stream_to_galapa_0_o_gp 1 4 3 900 100 NJ 100 1530J
-levelinfo -pg 1 -270 -120 120 420 750 1050 1370 1650 1760
-pagesize -pg 1 -db -bbox -sgen -390 -60 1760 970
+preplace netloc deployment_test_sour_0_o_test_axis 1 3 4 440 260 700J 300 N 300 1340
+preplace netloc deployment_test_rece_0_o_result 1 6 1 1350 330n
+preplace netloc galapagos_to_axi_str_0_o_axis 1 5 2 990 310 NJ
+preplace netloc axi_stream_to_galapa_0_o_gp 1 4 3 720 100 NJ 100 1340J
+preplace netloc deployment_test_sour_0_o_test_axis1 1 3 4 400 270 710 280 N 280 1320
+levelinfo -pg 1 -440 -290 -50 240 570 850 1160 1450 1560
+pagesize -pg 1 -db -bbox -sgen -560 -80 1560 970
 "
 }
 {

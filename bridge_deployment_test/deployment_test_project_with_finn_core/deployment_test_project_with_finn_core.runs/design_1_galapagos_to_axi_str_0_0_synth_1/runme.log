@@ -12,8 +12,9 @@ source design_1_galapagos_to_axi_str_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/ip_deployment_test'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/project_StreamingFCLayer_Batch_3/sol1/impl'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/mnt/Xilinx/Vivado/2019.1/data/ip'.
-update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1418.383 ; gain = 30.719 ; free physical = 57902 ; free virtual = 123242
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1414.742 ; gain = 26.750 ; free physical = 57080 ; free virtual = 122421
 Command: synth_design -top design_1_galapagos_to_axi_str_0_0 -part xczu19eg-ffvc1760-2-i -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xczu19eg'
@@ -21,31 +22,31 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu19e
 INFO: [Common 17-1540] The version limit for your license is '2020.05' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 INFO: [Device 21-403] Loading part xczu19eg-ffvc1760-2-i
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 29909 
+INFO: Helper process launched with PID 15703 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2541.824 ; gain = 0.000 ; free physical = 54791 ; free virtual = 120131
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2539.152 ; gain = 0.000 ; free physical = 47767 ; free virtual = 113108
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_galapagos_to_axi_str_0_0' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_galapagos_to_axi_str_0_0/synth/design_1_galapagos_to_axi_str_0_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'galapagos_to_axi_stream_bridge' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ipshared/4719/src/galapagos_axis_bridge.v:22]
+INFO: [Synth 8-6157] synthesizing module 'design_1_galapagos_to_axi_str_0_0' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.srcs/sources_1/bd/design_1/ip/design_1_galapagos_to_axi_str_0_0/synth/design_1_galapagos_to_axi_str_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'galapagos_to_axi_stream_bridge' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.srcs/sources_1/bd/design_1/ipshared/4719/src/galapagos_axis_bridge.v:22]
 	Parameter GALAPAGOS_DATA_WIDTH bound to: 512 - type: integer 
-	Parameter GALAPAGOS_NUM_TRANSFERS bound to: 2 - type: integer 
-	Parameter AXI_STREAM_DATA_WIDTH bound to: 56 - type: integer 
+	Parameter GALAPAGOS_NUM_TRANSFERS bound to: 1 - type: integer 
+	Parameter AXI_STREAM_DATA_WIDTH bound to: 320 - type: integer 
 	Parameter STATE_INPUT_COLLECTION bound to: 2'b00 
 	Parameter STATE_DATA_WIDTH_CONVERSION bound to: 2'b01 
 	Parameter STATE_OUTPUT_TRANSMISSION bound to: 2'b10 
-	Parameter GALAPAGOS_PACKET_SIZE bound to: 1024 - type: integer 
-INFO: [Synth 8-6157] synthesizing module 'data_width_converter' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ipshared/4719/src/data_width_converter.v:27]
-	Parameter INPUT_WIDTH bound to: 1024 - type: integer 
-	Parameter OUTPUT_WIDTH bound to: 56 - type: integer 
+	Parameter GALAPAGOS_PACKET_SIZE bound to: 512 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'data_width_converter' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.srcs/sources_1/bd/design_1/ipshared/4719/src/data_width_converter.v:27]
+	Parameter INPUT_WIDTH bound to: 512 - type: integer 
+	Parameter OUTPUT_WIDTH bound to: 320 - type: integer 
 	Parameter STATE_IDLE bound to: 2'b00 
 	Parameter STATE_DATA_WIDTH_CONVERSION bound to: 2'b01 
 	Parameter STATE_OUTPUT_TRANSMISSION bound to: 2'b10 
-	Parameter LAST_TRANSFER_WIDTH bound to: 16 - type: integer 
-INFO: [Synth 8-155] case statement is not full and has no default [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ipshared/4719/src/data_width_converter.v:106]
-INFO: [Synth 8-6155] done synthesizing module 'data_width_converter' (1#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ipshared/4719/src/data_width_converter.v:27]
-INFO: [Synth 8-155] case statement is not full and has no default [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ipshared/4719/src/galapagos_axis_bridge.v:129]
-INFO: [Synth 8-6155] done synthesizing module 'galapagos_to_axi_stream_bridge' (2#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ipshared/4719/src/galapagos_axis_bridge.v:22]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_galapagos_to_axi_str_0_0' (3#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_galapagos_to_axi_str_0_0/synth/design_1_galapagos_to_axi_str_0_0.v:57]
+	Parameter LAST_TRANSFER_WIDTH bound to: 192 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.srcs/sources_1/bd/design_1/ipshared/4719/src/data_width_converter.v:106]
+INFO: [Synth 8-6155] done synthesizing module 'data_width_converter' (1#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.srcs/sources_1/bd/design_1/ipshared/4719/src/data_width_converter.v:27]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.srcs/sources_1/bd/design_1/ipshared/4719/src/galapagos_axis_bridge.v:129]
+INFO: [Synth 8-6155] done synthesizing module 'galapagos_to_axi_stream_bridge' (2#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.srcs/sources_1/bd/design_1/ipshared/4719/src/galapagos_axis_bridge.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_galapagos_to_axi_str_0_0' (3#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.srcs/sources_1/bd/design_1/ip/design_1_galapagos_to_axi_str_0_0/synth/design_1_galapagos_to_axi_str_0_0.v:57]
 WARNING: [Synth 8-3331] design galapagos_to_axi_stream_bridge has unconnected port i_gp_TID[31]
 WARNING: [Synth 8-3331] design galapagos_to_axi_stream_bridge has unconnected port i_gp_TID[30]
 WARNING: [Synth 8-3331] design galapagos_to_axi_stream_bridge has unconnected port i_gp_TID[29]
@@ -79,7 +80,7 @@ WARNING: [Synth 8-3331] design galapagos_to_axi_stream_bridge has unconnected po
 WARNING: [Synth 8-3331] design galapagos_to_axi_stream_bridge has unconnected port i_gp_TID[1]
 WARNING: [Synth 8-3331] design galapagos_to_axi_stream_bridge has unconnected port i_gp_TID[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2541.824 ; gain = 0.000 ; free physical = 54808 ; free virtual = 120148
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2539.152 ; gain = 0.000 ; free physical = 47662 ; free virtual = 113004
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -92,10 +93,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2541.824 ; gain = 0.000 ; free physical = 54787 ; free virtual = 120128
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2539.152 ; gain = 0.000 ; free physical = 47818 ; free virtual = 113159
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2541.824 ; gain = 0.000 ; free physical = 54787 ; free virtual = 120128
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2539.152 ; gain = 0.000 ; free physical = 47818 ; free virtual = 113159
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -103,15 +104,15 @@ Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2690.664 ; gain = 0.000 ; free physical = 54543 ; free virtual = 119884
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2687.023 ; gain = 0.000 ; free physical = 47254 ; free virtual = 112595
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.22 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2717.445 ; gain = 26.781 ; free physical = 54619 ; free virtual = 119960
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.20 ; elapsed = 00:00:00.23 . Memory (MB): peak = 2713.805 ; gain = 26.781 ; free physical = 47365 ; free virtual = 112706
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 2717.445 ; gain = 175.621 ; free physical = 54724 ; free virtual = 120065
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 2713.805 ; gain = 174.652 ; free physical = 47515 ; free virtual = 112857
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -119,13 +120,13 @@ Start Loading Part and Timing Information
 Loading part: xczu19eg-ffvc1760-2-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 2717.445 ; gain = 175.621 ; free physical = 54724 ; free virtual = 120065
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 2713.805 ; gain = 174.652 ; free physical = 47514 ; free virtual = 112855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 2717.445 ; gain = 175.621 ; free physical = 54724 ; free virtual = 120065
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:22 . Memory (MB): peak = 2713.805 ; gain = 174.652 ; free physical = 47511 ; free virtual = 112852
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'r_core_state_reg' in module 'data_width_converter'
 INFO: [Synth 8-802] inferred FSM for state register 'r_core_state_reg' in module 'galapagos_to_axi_stream_bridge'
@@ -146,7 +147,7 @@ STATE_OUTPUT_TRANSMISSION |                              100 |                  
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'r_core_state_reg' using encoding 'one-hot' in module 'galapagos_to_axi_stream_bridge'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2717.445 ; gain = 175.621 ; free physical = 54703 ; free virtual = 120044
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2713.805 ; gain = 174.652 ; free physical = 47430 ; free virtual = 112771
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -159,21 +160,22 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Registers : 
-	             1024 Bit    Registers := 2     
-	              128 Bit    Registers := 2     
-	               56 Bit    Registers := 2     
-	                7 Bit    Registers := 1     
+	              512 Bit    Registers := 2     
+	              320 Bit    Registers := 2     
+	               64 Bit    Registers := 2     
+	               40 Bit    Registers := 1     
 	                1 Bit    Registers := 8     
 +---Muxes : 
-	   2 Input   1024 Bit        Muxes := 1     
-	   3 Input   1024 Bit        Muxes := 1     
-	   2 Input    128 Bit        Muxes := 1     
-	   3 Input    128 Bit        Muxes := 1     
-	   3 Input     56 Bit        Muxes := 1     
-	   2 Input     56 Bit        Muxes := 2     
-	   3 Input      7 Bit        Muxes := 1     
+	   2 Input    512 Bit        Muxes := 1     
+	   3 Input    512 Bit        Muxes := 1     
+	   3 Input    320 Bit        Muxes := 1     
+	   2 Input    320 Bit        Muxes := 2     
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input     40 Bit        Muxes := 1     
 	   3 Input      3 Bit        Muxes := 2     
 	   2 Input      3 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 12    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -185,30 +187,31 @@ Hierarchical RTL Component report
 Module data_width_converter 
 Detailed RTL Component Info : 
 +---Registers : 
-	             1024 Bit    Registers := 1     
-	              128 Bit    Registers := 1     
-	               56 Bit    Registers := 1     
-	                7 Bit    Registers := 1     
+	              512 Bit    Registers := 1     
+	              320 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	               40 Bit    Registers := 1     
 	                1 Bit    Registers := 3     
 +---Muxes : 
-	   2 Input   1024 Bit        Muxes := 1     
-	   3 Input   1024 Bit        Muxes := 1     
-	   2 Input    128 Bit        Muxes := 1     
-	   3 Input    128 Bit        Muxes := 1     
-	   3 Input     56 Bit        Muxes := 1     
-	   3 Input      7 Bit        Muxes := 1     
+	   2 Input    512 Bit        Muxes := 1     
+	   3 Input    512 Bit        Muxes := 1     
+	   3 Input    320 Bit        Muxes := 1     
+	   2 Input     64 Bit        Muxes := 1     
+	   3 Input     64 Bit        Muxes := 1     
+	   3 Input     40 Bit        Muxes := 1     
 	   3 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
 	   3 Input      1 Bit        Muxes := 6     
 Module galapagos_to_axi_stream_bridge 
 Detailed RTL Component Info : 
 +---Registers : 
-	             1024 Bit    Registers := 1     
-	              128 Bit    Registers := 1     
-	               56 Bit    Registers := 1     
+	              512 Bit    Registers := 1     
+	              320 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
 	                1 Bit    Registers := 5     
 +---Muxes : 
-	   2 Input     56 Bit        Muxes := 2     
+	   2 Input    320 Bit        Muxes := 2     
 	   3 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 6     
 	   3 Input      1 Bit        Muxes := 6     
@@ -261,7 +264,7 @@ WARNING: [Synth 8-3331] design design_1_galapagos_to_axi_str_0_0 has unconnected
 WARNING: [Synth 8-3331] design design_1_galapagos_to_axi_str_0_0 has unconnected port i_gp_TID[1]
 WARNING: [Synth 8-3331] design design_1_galapagos_to_axi_str_0_0 has unconnected port i_gp_TID[0]
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:26 . Memory (MB): peak = 2717.445 ; gain = 175.621 ; free physical = 54663 ; free virtual = 120003
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 2713.805 ; gain = 174.652 ; free physical = 47195 ; free virtual = 112537
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -273,13 +276,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:45 . Memory (MB): peak = 3131.398 ; gain = 589.574 ; free physical = 53205 ; free virtual = 118545
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:01:46 . Memory (MB): peak = 3125.727 ; gain = 586.574 ; free physical = 42999 ; free virtual = 108340
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:45 . Memory (MB): peak = 3133.398 ; gain = 591.574 ; free physical = 53199 ; free virtual = 118539
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:01:46 . Memory (MB): peak = 3127.727 ; gain = 588.574 ; free physical = 43064 ; free virtual = 108406
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -291,7 +294,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:01:46 . Memory (MB): peak = 3157.305 ; gain = 615.480 ; free physical = 53180 ; free virtual = 118520
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:01:47 . Memory (MB): peak = 3149.031 ; gain = 609.879 ; free physical = 43000 ; free virtual = 108342
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -315,7 +318,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:01:48 . Memory (MB): peak = 3163.242 ; gain = 621.418 ; free physical = 53185 ; free virtual = 118526
+Finished IO Insertion : Time (s): cpu = 00:00:50 ; elapsed = 00:01:49 . Memory (MB): peak = 3154.969 ; gain = 615.816 ; free physical = 45287 ; free virtual = 110628
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -328,7 +331,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:01:48 . Memory (MB): peak = 3163.242 ; gain = 621.418 ; free physical = 53185 ; free virtual = 118526
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:50 ; elapsed = 00:01:49 . Memory (MB): peak = 3154.969 ; gain = 615.816 ; free physical = 45304 ; free virtual = 110645
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -340,25 +343,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:01:48 . Memory (MB): peak = 3163.242 ; gain = 621.418 ; free physical = 53184 ; free virtual = 118525
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:51 ; elapsed = 00:01:49 . Memory (MB): peak = 3154.969 ; gain = 615.816 ; free physical = 45514 ; free virtual = 110855
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:01:48 . Memory (MB): peak = 3163.242 ; gain = 621.418 ; free physical = 53183 ; free virtual = 118524
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:51 ; elapsed = 00:01:49 . Memory (MB): peak = 3154.969 ; gain = 615.816 ; free physical = 45513 ; free virtual = 110854
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:01:49 . Memory (MB): peak = 3163.242 ; gain = 621.418 ; free physical = 53181 ; free virtual = 118521
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:51 ; elapsed = 00:01:49 . Memory (MB): peak = 3154.969 ; gain = 615.816 ; free physical = 46668 ; free virtual = 112010
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:01:49 . Memory (MB): peak = 3163.242 ; gain = 621.418 ; free physical = 53181 ; free virtual = 118521
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:51 ; elapsed = 00:01:49 . Memory (MB): peak = 3154.969 ; gain = 615.816 ; free physical = 46666 ; free virtual = 112007
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -374,54 +377,54 @@ Report Cell Usage:
 +------+-------+------+
 |      |Cell   |Count |
 +------+-------+------+
-|1     |CARRY8 |     8|
-|2     |LUT1   |     2|
-|3     |LUT2   |     3|
-|4     |LUT3   |   229|
-|5     |LUT4   |    24|
-|6     |LUT5   |  1093|
-|7     |LUT6   |    13|
-|8     |FDRE   |  2445|
-|9     |FDSE   |    11|
+|1     |CARRY8 |     2|
+|2     |LUT1   |     1|
+|3     |LUT2   |   324|
+|4     |LUT3   |   688|
+|5     |LUT4   |    15|
+|6     |LUT5   |   221|
+|7     |LUT6   |    16|
+|8     |FDRE   |  1810|
+|9     |FDSE   |     7|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+---------+-------------------------------+------+
 |      |Instance |Module                         |Cells |
 +------+---------+-------------------------------+------+
-|1     |top      |                               |  3828|
-|2     |  inst   |galapagos_to_axi_stream_bridge |  3828|
-|3     |    dwc  |data_width_converter           |  2592|
+|1     |top      |                               |  3084|
+|2     |  inst   |galapagos_to_axi_stream_bridge |  3084|
+|3     |    dwc  |data_width_converter           |  2162|
 +------+---------+-------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:01:49 . Memory (MB): peak = 3163.242 ; gain = 621.418 ; free physical = 53181 ; free virtual = 118521
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:51 ; elapsed = 00:01:49 . Memory (MB): peak = 3154.969 ; gain = 615.816 ; free physical = 46667 ; free virtual = 112009
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 32 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:01:40 . Memory (MB): peak = 3163.242 ; gain = 445.797 ; free physical = 53220 ; free virtual = 118561
-Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:01:49 . Memory (MB): peak = 3163.250 ; gain = 621.418 ; free physical = 53234 ; free virtual = 118575
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:47 ; elapsed = 00:01:40 . Memory (MB): peak = 3154.969 ; gain = 441.164 ; free physical = 46699 ; free virtual = 112040
+Synthesis Optimization Complete : Time (s): cpu = 00:00:51 ; elapsed = 00:01:49 . Memory (MB): peak = 3154.977 ; gain = 615.816 ; free physical = 46711 ; free virtual = 112052
 INFO: [Project 1-571] Translating synthesized netlist
-INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3238.883 ; gain = 0.000 ; free physical = 53134 ; free virtual = 118475
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3233.609 ; gain = 0.000 ; free physical = 48645 ; free virtual = 113987
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-29 Infos, 65 Warnings, 0 Critical Warnings and 0 Errors encountered.
+30 Infos, 65 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:02:25 . Memory (MB): peak = 3238.883 ; gain = 1814.500 ; free physical = 53224 ; free virtual = 118564
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3238.883 ; gain = 0.000 ; free physical = 53221 ; free virtual = 118562
+synth_design: Time (s): cpu = 00:01:09 ; elapsed = 00:02:25 . Memory (MB): peak = 3233.609 ; gain = 1810.898 ; free physical = 48857 ; free virtual = 114198
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3233.609 ; gain = 0.000 ; free physical = 48863 ; free virtual = 114204
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/design_1_galapagos_to_axi_str_0_0_synth_1/design_1_galapagos_to_axi_str_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.runs/design_1_galapagos_to_axi_str_0_0_synth_1/design_1_galapagos_to_axi_str_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_galapagos_to_axi_str_0_0, cache-ID = ab664c30a0f43d74
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_galapagos_to_axi_str_0_0, cache-ID = 6fe0f26ef2c6298d
 INFO: [Coretcl 2-1174] Renamed 2 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3262.895 ; gain = 0.000 ; free physical = 53302 ; free virtual = 118642
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3257.621 ; gain = 0.000 ; free physical = 52398 ; free virtual = 117740
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/design_1_galapagos_to_axi_str_0_0_synth_1/design_1_galapagos_to_axi_str_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.runs/design_1_galapagos_to_axi_str_0_0_synth_1/design_1_galapagos_to_axi_str_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_galapagos_to_axi_str_0_0_utilization_synth.rpt -pb design_1_galapagos_to_axi_str_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Sep  4 18:02:56 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Sep  4 21:41:13 2020...

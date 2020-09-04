@@ -25,9 +25,13 @@ module bd_f60c_wrapper
     SLOT_3_AXIS_tdata,
     SLOT_3_AXIS_tlast,
     SLOT_3_AXIS_tvalid,
+    SLOT_4_AXIS_tdata,
+    SLOT_4_AXIS_tlast,
+    SLOT_4_AXIS_tready,
+    SLOT_4_AXIS_tvalid,
     clk,
     resetn);
-  input [55:0]SLOT_0_AXIS_tdata;
+  input [31:0]SLOT_0_AXIS_tdata;
   input SLOT_0_AXIS_tlast;
   input SLOT_0_AXIS_tready;
   input SLOT_0_AXIS_tvalid;
@@ -38,17 +42,21 @@ module bd_f60c_wrapper
   input SLOT_1_AXIS_tlast;
   input SLOT_1_AXIS_tready;
   input SLOT_1_AXIS_tvalid;
-  input [55:0]SLOT_2_AXIS_tdata;
+  input [319:0]SLOT_2_AXIS_tdata;
   input SLOT_2_AXIS_tlast;
   input SLOT_2_AXIS_tready;
   input SLOT_2_AXIS_tvalid;
   input [31:0]SLOT_3_AXIS_tdata;
   input SLOT_3_AXIS_tlast;
   input SLOT_3_AXIS_tvalid;
+  input [319:0]SLOT_4_AXIS_tdata;
+  input SLOT_4_AXIS_tlast;
+  input SLOT_4_AXIS_tready;
+  input SLOT_4_AXIS_tvalid;
   input clk;
   input resetn;
 
-  wire [55:0]SLOT_0_AXIS_tdata;
+  wire [31:0]SLOT_0_AXIS_tdata;
   wire SLOT_0_AXIS_tlast;
   wire SLOT_0_AXIS_tready;
   wire SLOT_0_AXIS_tvalid;
@@ -59,13 +67,17 @@ module bd_f60c_wrapper
   wire SLOT_1_AXIS_tlast;
   wire SLOT_1_AXIS_tready;
   wire SLOT_1_AXIS_tvalid;
-  wire [55:0]SLOT_2_AXIS_tdata;
+  wire [319:0]SLOT_2_AXIS_tdata;
   wire SLOT_2_AXIS_tlast;
   wire SLOT_2_AXIS_tready;
   wire SLOT_2_AXIS_tvalid;
   wire [31:0]SLOT_3_AXIS_tdata;
   wire SLOT_3_AXIS_tlast;
   wire SLOT_3_AXIS_tvalid;
+  wire [319:0]SLOT_4_AXIS_tdata;
+  wire SLOT_4_AXIS_tlast;
+  wire SLOT_4_AXIS_tready;
+  wire SLOT_4_AXIS_tvalid;
   wire clk;
   wire resetn;
 
@@ -88,6 +100,10 @@ module bd_f60c_wrapper
         .SLOT_3_AXIS_tdata(SLOT_3_AXIS_tdata),
         .SLOT_3_AXIS_tlast(SLOT_3_AXIS_tlast),
         .SLOT_3_AXIS_tvalid(SLOT_3_AXIS_tvalid),
+        .SLOT_4_AXIS_tdata(SLOT_4_AXIS_tdata),
+        .SLOT_4_AXIS_tlast(SLOT_4_AXIS_tlast),
+        .SLOT_4_AXIS_tready(SLOT_4_AXIS_tready),
+        .SLOT_4_AXIS_tvalid(SLOT_4_AXIS_tvalid),
         .clk(clk),
         .resetn(resetn));
 endmodule

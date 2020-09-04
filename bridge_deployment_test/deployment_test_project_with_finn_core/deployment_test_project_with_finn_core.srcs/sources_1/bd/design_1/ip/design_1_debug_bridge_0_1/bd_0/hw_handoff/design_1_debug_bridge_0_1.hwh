@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Sep  4 17:59:56 2020" VIVADOVERSION="2019.1">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Sep  4 21:38:14 2020" VIVADOVERSION="2019.1">
 
-  <SYSTEMINFO ARCH="zynquplus" BOARD="fidus.com:sidewinder100:part0:2.0" DEVICE="xczu19eg" NAME="bd_0482" PACKAGE="ffvc1760" SPEEDGRADE="-2"/>
+  <SYSTEMINFO ARCH="zynquplus" DEVICE="xczu19eg" NAME="bd_0482" PACKAGE="ffvc1760" SPEEDGRADE="-2"/>
 
   <EXTERNALPORTS>
     <PORT CLKFREQUENCY="99999001" DIR="I" NAME="s_axi_aclk" SIGIS="clk" SIGNAME="External_Ports_s_axi_aclk">

@@ -71,14 +71,14 @@ input wire i_clk;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME i_aresetn, POLARITY ACTIVE_LOW, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:signal:reset:1.0 i_aresetn RST" *)
 input wire i_aresetn;
-input wire [783 : 0] i_expected_packet;
+input wire [319 : 0] i_expected_packet;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 i_test_axis TVALID" *)
 input wire i_test_axis_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 i_test_axis TREADY" *)
 output wire o_test_axis_TREADY;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME i_test_axis, TDATA_NUM_BYTES 7, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_util_ds_buf_0_0_IBUF_OUT, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME i_test_axis, TDATA_NUM_BYTES 40, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_util_ds_buf_0_0_IBUF_OUT, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 i_test_axis TDATA" *)
-input wire [55 : 0] i_test_axis_TDATA;
+input wire [319 : 0] i_test_axis_TDATA;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 o_result TVALID" *)
 output wire o_result_TVALID;
 (* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME o_result, TDATA_NUM_BYTES 1, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 0, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_util_ds_buf_0_0_IBUF_OUT, LAYERED_METADATA undef, INSERT_VIP 0" *)
@@ -86,9 +86,9 @@ output wire o_result_TVALID;
 output wire [7 : 0] o_result_PASS;
 
   deployment_test_receiving_block #(
-    .AXIS_DATA_WIDTH(56),
-    .NUM_TRANSFERS(16),
-    .NUM_BITS_PER_TRANSFER(49)
+    .AXIS_DATA_WIDTH(320),
+    .NUM_TRANSFERS(1),
+    .NUM_BITS_PER_TRANSFER(320)
   ) inst (
     .i_clk(i_clk),
     .i_aresetn(i_aresetn),

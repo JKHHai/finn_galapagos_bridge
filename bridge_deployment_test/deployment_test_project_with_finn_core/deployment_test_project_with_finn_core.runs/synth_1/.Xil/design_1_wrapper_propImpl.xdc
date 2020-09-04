@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc rfile:../../../Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.srcs/constrs_1/imports/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc rfile:../../../deployment_test_project_with_finn_core.srcs/constrs_1/imports/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:26 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN C4 [get_ports {sysclk100_clk_p[0]}]
 set_property src_info {type:XDC file:1 line:27 export:INPUT save:INPUT read:READ} [current_design]

@@ -22,7 +22,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d624d3b7</spirit:value>
+            <spirit:value>9:6fa3a518</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -33,7 +33,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d624d3b7</spirit:value>
+            <spirit:value>9:6fa3a518</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -49,11 +49,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Sep 02 14:17:13 UTC 2020</spirit:value>
+            <spirit:value>Fri Sep 04 21:38:05 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:d624d3b7</spirit:value>
+            <spirit:value>9:6fa3a518</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -73,7 +73,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:502155cd</spirit:value>
+            <spirit:value>9:962c8c85</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -89,11 +89,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Sep 02 14:17:13 UTC 2020</spirit:value>
+            <spirit:value>Fri Sep 04 21:38:05 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:502155cd</spirit:value>
+            <spirit:value>9:962c8c85</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -113,11 +113,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Sep 02 14:17:13 UTC 2020</spirit:value>
+            <spirit:value>Fri Sep 04 21:38:05 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:502155cd</spirit:value>
+            <spirit:value>9:962c8c85</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -133,11 +133,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Sep 02 14:17:13 UTC 2020</spirit:value>
+            <spirit:value>Fri Sep 04 21:38:05 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:502155cd</spirit:value>
+            <spirit:value>9:962c8c85</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -152,7 +152,7 @@
         <spirit:wire>
           <spirit:direction>out</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.CONST_WIDTH&apos;)) - 1)">783</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.CONST_WIDTH&apos;)) - 1)">63</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -169,12 +169,12 @@
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
         <spirit:name>CONST_WIDTH</spirit:name>
         <spirit:displayName>Const Width</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CONST_WIDTH">784</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CONST_WIDTH">64</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>CONST_VAL</spirit:name>
         <spirit:displayName>Const Val</spirit:displayName>
-        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CONST_VAL" spirit:bitStringLength="784">0x0000000000000000000000000000049524A09515550D4FFF20EEFFF80F9FFFD0FFFBFA0FFFFF107FFFF207FFFF30BFF5C307E730E0FF1B3C0FCA2F807DACC30BC7D0307FFEFC0BFFE0005FFF000AFFC0000FFD000C824000B24B0006ED2000596600</spirit:value>
+        <spirit:value spirit:format="bitString" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.CONST_VAL" spirit:bitStringLength="64">0xB7FE4FBB0D50A43D</spirit:value>
       </spirit:modelParameter>
     </spirit:modelParameters>
   </spirit:model>
@@ -238,12 +238,12 @@
     <spirit:parameter>
       <spirit:name>CONST_WIDTH</spirit:name>
       <spirit:displayName>Const Width</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.CONST_WIDTH" spirit:order="3" spirit:minimum="1" spirit:maximum="4096" spirit:rangeType="long">784</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.CONST_WIDTH" spirit:order="3" spirit:minimum="1" spirit:maximum="4096" spirit:rangeType="long">64</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>CONST_VAL</spirit:name>
       <spirit:displayName>Const Val</spirit:displayName>
-      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.CONST_VAL" spirit:order="4">0x0000000000000000000000000000049524A09515550D4FFF20EEFFF80F9FFFD0FFFBFA0FFFFF107FFFF207FFFF30BFF5C307E730E0FF1B3C0FCA2F807DACC30BC7D0307FFEFC0BFFE0005FFF000AFFC0000FFD000C824000B24B0006ED2000596600</spirit:value>
+      <spirit:value spirit:resolve="user" spirit:id="PARAM_VALUE.CONST_VAL" spirit:order="4">b1011011111111110010011111011101100001101010100001010010000111101</spirit:value>
     </spirit:parameter>
   </spirit:parameters>
   <spirit:vendorExtensions>

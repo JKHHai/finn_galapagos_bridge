@@ -1,0 +1,4 @@
+all:
+{
+	[destination_device = pl] bitstream_deployment_test_fc_1.bit
+}

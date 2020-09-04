@@ -9,10 +9,10 @@
       <spirit:instanceName>design_1_xlconstant_0_0</spirit:instanceName>
       <spirit:componentRef spirit:vendor="xilinx.com" spirit:library="ip" spirit:name="xlconstant" spirit:version="1.1"/>
       <spirit:configurableElementValues>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.CONST_VAL">0x0000000000000000000000000000049524A09515550D4FFF20EEFFF80F9FFFD0FFFBFA0FFFFF107FFFF207FFFF30BFF5C307E730E0FF1B3C0FCA2F807DACC30BC7D0307FFEFC0BFFE0005FFF000AFFC0000FFD000C824000B24B0006ED2000596600</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.CONST_WIDTH">784</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CONST_VAL">0x0000000000000000000000000000049524A09515550D4FFF20EEFFF80F9FFFD0FFFBFA0FFFFF107FFFF207FFFF30BFF5C307E730E0FF1B3C0FCA2F807DACC30BC7D0307FFEFC0BFFE0005FFF000AFFC0000FFD000C824000B24B0006ED2000596600</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CONST_WIDTH">784</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.CONST_VAL">0xB7FE4FBB0D50A43D</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.CONST_WIDTH">64</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CONST_VAL">b1011011111111110010011111011101100001101010100001010010000111101</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.CONST_WIDTH">64</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.Component_Name">design_1_xlconstant_0_0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.ARCHITECTURE">zynquplus</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PROJECT_PARAM.BASE_BOARD_PART"/>

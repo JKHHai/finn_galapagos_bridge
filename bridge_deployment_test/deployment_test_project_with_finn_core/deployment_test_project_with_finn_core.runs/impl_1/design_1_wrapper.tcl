@@ -60,7 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {HDL-1065} -limit 10000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -68,26 +67,25 @@ set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 6
   create_project -in_memory -part xczu19eg-ffvc1760-2-i
-  set_property board_part_repo_paths {/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/Sidewinder_Boardfile/2.0/} [current_project]
-  set_property board_part fidus.com:sidewinder100:part0:2.0 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.cache/wt [current_project]
-  set_property parent.project_path /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.xpr [current_project]
+  set_property webtalk.parent_dir /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.cache/wt [current_project]
+  set_property parent.project_path /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.xpr [current_project]
   set_property ip_repo_paths {
   /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/ip_deployment_test
   /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge
+  /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/project_StreamingFCLayer_Batch_3/sol1/impl
 } [current_project]
   update_ip_catalog
-  set_property ip_output_repo /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.cache/ip [current_project]
+  set_property ip_output_repo /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES {XPM_CDC XPM_FIFO XPM_MEMORY} [current_project]
-  add_files -quiet /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/synth_1/design_1_wrapper.dcp
+  add_files -quiet /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.runs/synth_1/design_1_wrapper.dcp
   set_msg_config -source 4 -id {BD 41-1661} -limit 0
   set_param project.isImplRun true
-  add_files /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/design_1.bd
+  add_files /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.srcs/sources_1/bd/design_1/design_1.bd
   set_param project.isImplRun false
-  read_xdc /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc
+  read_xdc /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.srcs/constrs_1/imports/Sidewinder_Board_and_XDC_files_20190923/sidewinder_io_constraints.xdc
   set_param project.isImplRun true
   link_design -top design_1_wrapper -part xczu19eg-ffvc1760-2-i
   set_param project.isImplRun false

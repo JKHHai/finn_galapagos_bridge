@@ -83,9 +83,9 @@ input wire [31 : 0] i_core_TDEST;
 input wire i_axis_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 i_axis TREADY" *)
 output wire o_axis_TREADY;
-(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME i_axis, TDATA_NUM_BYTES 7, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_util_ds_buf_0_0_IBUF_OUT, LAYERED_METADATA undef, INSERT_VIP 0" *)
+(* X_INTERFACE_PARAMETER = "XIL_INTERFACENAME i_axis, TDATA_NUM_BYTES 40, TDEST_WIDTH 0, TID_WIDTH 0, TUSER_WIDTH 0, HAS_TREADY 1, HAS_TSTRB 0, HAS_TKEEP 0, HAS_TLAST 0, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_util_ds_buf_0_0_IBUF_OUT, LAYERED_METADATA undef, INSERT_VIP 0" *)
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 i_axis TDATA" *)
-input wire [55 : 0] i_axis_TDATA;
+input wire [319 : 0] i_axis_TDATA;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 o_gp TVALID" *)
 output wire o_gp_TVALID;
 (* X_INTERFACE_INFO = "xilinx.com:interface:axis:1.0 o_gp TREADY" *)
@@ -103,8 +103,8 @@ output wire [31 : 0] o_gp_TID;
 output wire o_gp_TLAST;
 
   axi_stream_to_galapagos_bridge #(
-    .AXI_STREAM_DATA_WIDTH(56),
-    .AXI_STREAM_NUM_TRANSFERS(16),
+    .AXI_STREAM_DATA_WIDTH(320),
+    .AXI_STREAM_NUM_TRANSFERS(1),
     .GALAPAGOS_DATA_WIDTH(512)
   ) inst (
     .i_clk(i_clk),

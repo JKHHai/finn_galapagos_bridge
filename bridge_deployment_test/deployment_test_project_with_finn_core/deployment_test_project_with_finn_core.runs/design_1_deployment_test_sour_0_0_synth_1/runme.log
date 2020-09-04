@@ -12,8 +12,9 @@ source design_1_deployment_test_sour_0_0.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/ip_deployment_test'.
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/ip-bridge'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/project_StreamingFCLayer_Batch_3/sol1/impl'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/mnt/Xilinx/Vivado/2019.1/data/ip'.
-update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1418.258 ; gain = 30.719 ; free physical = 59375 ; free virtual = 124716
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1417.840 ; gain = 14.844 ; free physical = 57079 ; free virtual = 122421
 Command: synth_design -top design_1_deployment_test_sour_0_0 -part xczu19eg-ffvc1760-2-i -mode out_of_context
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xczu19eg'
@@ -21,22 +22,22 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu19e
 INFO: [Common 17-1540] The version limit for your license is '2020.05' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 INFO: [Device 21-403] Loading part xczu19eg-ffvc1760-2-i
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11485 
+INFO: Helper process launched with PID 15829 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2541.457 ; gain = 0.000 ; free physical = 54195 ; free virtual = 119536
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2539.312 ; gain = 0.000 ; free physical = 47775 ; free virtual = 113117
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'design_1_deployment_test_sour_0_0' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_deployment_test_sour_0_0/synth/design_1_deployment_test_sour_0_0.v:57]
-INFO: [Synth 8-6157] synthesizing module 'deployment_test_source_block' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ipshared/8389/src/deployment_test_source_block.v:23]
-	Parameter AXIS_DATA_WIDTH bound to: 56 - type: integer 
-	Parameter NUM_TRANSFERS bound to: 16 - type: integer 
-	Parameter NUM_BITS_PER_TRANSFER bound to: 49 - type: integer 
-	Parameter PACKET_SIZE bound to: 784 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'design_1_deployment_test_sour_0_0' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.srcs/sources_1/bd/design_1/ip/design_1_deployment_test_sour_0_0/synth/design_1_deployment_test_sour_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'deployment_test_source_block' [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.srcs/sources_1/bd/design_1/ipshared/8389/src/deployment_test_source_block.v:23]
+	Parameter AXIS_DATA_WIDTH bound to: 8 - type: integer 
+	Parameter NUM_TRANSFERS bound to: 8 - type: integer 
+	Parameter NUM_BITS_PER_TRANSFER bound to: 8 - type: integer 
+	Parameter PACKET_SIZE bound to: 64 - type: integer 
 	Parameter STATE_TRANSMIT_DATA bound to: 1'b0 
 	Parameter STATE_IDLE bound to: 1'b1 
-INFO: [Synth 8-6155] done synthesizing module 'deployment_test_source_block' (1#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ipshared/8389/src/deployment_test_source_block.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'design_1_deployment_test_sour_0_0' (2#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.srcs/sources_1/bd/design_1/ip/design_1_deployment_test_sour_0_0/synth/design_1_deployment_test_sour_0_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'deployment_test_source_block' (1#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.srcs/sources_1/bd/design_1/ipshared/8389/src/deployment_test_source_block.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_deployment_test_sour_0_0' (2#1) [/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.srcs/sources_1/bd/design_1/ip/design_1_deployment_test_sour_0_0/synth/design_1_deployment_test_sour_0_0.v:57]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2541.457 ; gain = 0.000 ; free physical = 54234 ; free virtual = 119574
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2539.312 ; gain = 0.000 ; free physical = 47566 ; free virtual = 112907
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -49,10 +50,10 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2541.457 ; gain = 0.000 ; free physical = 54232 ; free virtual = 119572
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2539.312 ; gain = 0.000 ; free physical = 47860 ; free virtual = 113201
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 2541.457 ; gain = 0.000 ; free physical = 54232 ; free virtual = 119572
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 2539.312 ; gain = 0.000 ; free physical = 47860 ; free virtual = 113201
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
@@ -60,15 +61,15 @@ Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2666.297 ; gain = 0.000 ; free physical = 53898 ; free virtual = 119238
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2674.184 ; gain = 0.000 ; free physical = 47259 ; free virtual = 112601
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.14 ; elapsed = 00:00:00.22 . Memory (MB): peak = 2690.109 ; gain = 23.812 ; free physical = 53851 ; free virtual = 119191
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.09 ; elapsed = 00:00:00.19 . Memory (MB): peak = 2697.996 ; gain = 23.812 ; free physical = 47213 ; free virtual = 112555
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 2690.109 ; gain = 148.652 ; free physical = 54023 ; free virtual = 119363
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 2697.996 ; gain = 158.684 ; free physical = 47341 ; free virtual = 112682
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -76,16 +77,16 @@ Start Loading Part and Timing Information
 Loading part: xczu19eg-ffvc1760-2-i
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 2690.109 ; gain = 148.652 ; free physical = 54023 ; free virtual = 119363
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 2697.996 ; gain = 158.684 ; free physical = 47352 ; free virtual = 112693
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 2690.109 ; gain = 148.652 ; free physical = 54023 ; free virtual = 119364
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 2697.996 ; gain = 158.684 ; free physical = 47350 ; free virtual = 112692
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 2690.109 ; gain = 148.652 ; free physical = 54055 ; free virtual = 119395
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 2697.996 ; gain = 158.684 ; free physical = 47419 ; free virtual = 112760
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -98,13 +99,12 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Registers : 
-	              784 Bit    Registers := 1     
-	               56 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input    784 Bit        Muxes := 2     
-	   2 Input     56 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 6     
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -115,13 +115,12 @@ Hierarchical RTL Component report
 Module deployment_test_source_block 
 Detailed RTL Component Info : 
 +---Registers : 
-	              784 Bit    Registers := 1     
-	               56 Bit    Registers := 1     
+	               64 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
 	                1 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input    784 Bit        Muxes := 2     
-	   2 Input     56 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 6     
+	   2 Input     64 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 8     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -138,15 +137,8 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-3886] merging instance 'inst/r_test_axis_tdata_reg[49]' (FDRE) to 'inst/r_test_axis_tdata_reg[50]'
-INFO: [Synth 8-3886] merging instance 'inst/r_test_axis_tdata_reg[50]' (FDRE) to 'inst/r_test_axis_tdata_reg[51]'
-INFO: [Synth 8-3886] merging instance 'inst/r_test_axis_tdata_reg[51]' (FDRE) to 'inst/r_test_axis_tdata_reg[52]'
-INFO: [Synth 8-3886] merging instance 'inst/r_test_axis_tdata_reg[52]' (FDRE) to 'inst/r_test_axis_tdata_reg[53]'
-INFO: [Synth 8-3886] merging instance 'inst/r_test_axis_tdata_reg[53]' (FDRE) to 'inst/r_test_axis_tdata_reg[54]'
-INFO: [Synth 8-3886] merging instance 'inst/r_test_axis_tdata_reg[54]' (FDRE) to 'inst/r_test_axis_tdata_reg[55]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/r_test_axis_tdata_reg[55] )
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:15 ; elapsed = 00:00:23 . Memory (MB): peak = 2690.109 ; gain = 148.652 ; free physical = 54070 ; free virtual = 119410
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 2697.996 ; gain = 158.684 ; free physical = 47440 ; free virtual = 112781
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -158,13 +150,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:44 ; elapsed = 00:01:41 . Memory (MB): peak = 3125.031 ; gain = 583.574 ; free physical = 51522 ; free virtual = 116863
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:01:42 . Memory (MB): peak = 3118.918 ; gain = 579.605 ; free physical = 43309 ; free virtual = 108651
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:01:42 . Memory (MB): peak = 3126.031 ; gain = 584.574 ; free physical = 51510 ; free virtual = 116850
+Finished Timing Optimization : Time (s): cpu = 00:00:43 ; elapsed = 00:01:42 . Memory (MB): peak = 3118.918 ; gain = 579.605 ; free physical = 43297 ; free virtual = 108639
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -176,7 +168,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:01:42 . Memory (MB): peak = 3146.062 ; gain = 604.605 ; free physical = 51504 ; free virtual = 116844
+Finished Technology Mapping : Time (s): cpu = 00:00:43 ; elapsed = 00:01:42 . Memory (MB): peak = 3137.949 ; gain = 598.637 ; free physical = 43293 ; free virtual = 108634
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -200,7 +192,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:01:44 . Memory (MB): peak = 3152.000 ; gain = 610.543 ; free physical = 51497 ; free virtual = 116837
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:01:43 . Memory (MB): peak = 3143.887 ; gain = 604.574 ; free physical = 43181 ; free virtual = 108522
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -213,7 +205,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:01:44 . Memory (MB): peak = 3152.000 ; gain = 610.543 ; free physical = 51502 ; free virtual = 116843
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:45 ; elapsed = 00:01:43 . Memory (MB): peak = 3143.887 ; gain = 604.574 ; free physical = 43181 ; free virtual = 108522
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -225,25 +217,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:01:44 . Memory (MB): peak = 3152.000 ; gain = 610.543 ; free physical = 51522 ; free virtual = 116862
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:45 ; elapsed = 00:01:43 . Memory (MB): peak = 3143.887 ; gain = 604.574 ; free physical = 43181 ; free virtual = 108522
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:01:44 . Memory (MB): peak = 3152.000 ; gain = 610.543 ; free physical = 51536 ; free virtual = 116876
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:45 ; elapsed = 00:01:43 . Memory (MB): peak = 3143.887 ; gain = 604.574 ; free physical = 43180 ; free virtual = 108522
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:01:45 . Memory (MB): peak = 3152.000 ; gain = 610.543 ; free physical = 51364 ; free virtual = 116705
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:45 ; elapsed = 00:01:43 . Memory (MB): peak = 3143.887 ; gain = 604.574 ; free physical = 43180 ; free virtual = 108521
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:01:45 . Memory (MB): peak = 3152.000 ; gain = 610.543 ; free physical = 51356 ; free virtual = 116696
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:45 ; elapsed = 00:01:43 . Memory (MB): peak = 3143.887 ; gain = 604.574 ; free physical = 43180 ; free virtual = 108521
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -263,48 +255,47 @@ Report Cell Usage:
 |2     |LUT1   |     2|
 |3     |LUT2   |     2|
 |4     |LUT3   |     2|
-|5     |LUT4   |   745|
-|6     |LUT5   |     2|
-|7     |LUT6   |     1|
-|8     |FDRE   |   867|
+|5     |LUT4   |    59|
+|6     |LUT5   |     1|
+|7     |LUT6   |     6|
+|8     |FDRE   |   106|
 +------+-------+------+
 
 Report Instance Areas: 
 +------+---------+-----------------------------+------+
 |      |Instance |Module                       |Cells |
 +------+---------+-----------------------------+------+
-|1     |top      |                             |  1625|
-|2     |  inst   |deployment_test_source_block |  1625|
+|1     |top      |                             |   182|
+|2     |  inst   |deployment_test_source_block |   182|
 +------+---------+-----------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:01:45 . Memory (MB): peak = 3152.000 ; gain = 610.543 ; free physical = 51356 ; free virtual = 116696
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:45 ; elapsed = 00:01:43 . Memory (MB): peak = 3143.887 ; gain = 604.574 ; free physical = 43180 ; free virtual = 108521
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:01:37 . Memory (MB): peak = 3152.000 ; gain = 461.891 ; free physical = 51395 ; free virtual = 116735
-Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:01:45 . Memory (MB): peak = 3152.008 ; gain = 610.543 ; free physical = 51397 ; free virtual = 116737
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:41 ; elapsed = 00:01:35 . Memory (MB): peak = 3143.887 ; gain = 445.891 ; free physical = 43219 ; free virtual = 108561
+Synthesis Optimization Complete : Time (s): cpu = 00:00:45 ; elapsed = 00:01:43 . Memory (MB): peak = 3143.895 ; gain = 604.574 ; free physical = 43233 ; free virtual = 108574
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 4 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
-WARNING: [Netlist 29-101] Netlist 'design_1_deployment_test_sour_0_0' is not ideal for floorplanning, since the cellview 'deployment_test_source_block' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3197.594 ; gain = 0.000 ; free physical = 51377 ; free virtual = 116717
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3189.574 ; gain = 0.000 ; free physical = 42971 ; free virtual = 108312
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-28 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+22 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:05 ; elapsed = 00:02:21 . Memory (MB): peak = 3197.594 ; gain = 1772.336 ; free physical = 51474 ; free virtual = 116814
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3197.594 ; gain = 0.000 ; free physical = 51474 ; free virtual = 116814
+synth_design: Time (s): cpu = 00:01:02 ; elapsed = 00:02:19 . Memory (MB): peak = 3189.574 ; gain = 1766.734 ; free physical = 43038 ; free virtual = 108379
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3189.574 ; gain = 0.000 ; free physical = 43037 ; free virtual = 108379
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/design_1_deployment_test_sour_0_0_synth_1/design_1_deployment_test_sour_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.runs/design_1_deployment_test_sour_0_0_synth_1/design_1_deployment_test_sour_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_deployment_test_sour_0_0, cache-ID = b666447d8f0b33b8
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3197.594 ; gain = 0.000 ; free physical = 51523 ; free virtual = 116863
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_deployment_test_sour_0_0, cache-ID = bc69e004b5472fbc
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3189.574 ; gain = 0.000 ; free physical = 43026 ; free virtual = 108368
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/design_1_deployment_test_sour_0_0_synth_1/design_1_deployment_test_sour_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint '/home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.runs/design_1_deployment_test_sour_0_0_synth_1/design_1_deployment_test_sour_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_deployment_test_sour_0_0_utilization_synth.rpt -pb design_1_deployment_test_sour_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Wed Sep  2 14:20:15 2020...
+INFO: [Common 17-206] Exiting Vivado at Fri Sep  4 21:41:05 2020...

@@ -57,8 +57,8 @@
 #include "systemc.h"
 class design_1_xlconstant_0_0 : public sc_module {
   public:
-xlconstant_v1_1_6<784,0x0000000000000000000000000000049524A09515550D4FFF20EEFFF80F9FFFD0FFFBFA0FFFFF107FFFF207FFFF30BFF5C307E730E0FF1B3C0FCA2F807DACC30BC7D0307FFEFC0BFFE0005FFF000AFFC0000FFD000C824000B24B0006ED2000596600> mod;
-  sc_out< sc_bv<784> > dout;
+xlconstant_v1_1_6<64,b1011011111111110010011111011101100001101010100001010010000111101> mod;
+  sc_out< sc_bv<64> > dout;
 design_1_xlconstant_0_0 (sc_core::sc_module_name name) :sc_module(name), mod("mod") {
     mod.dout(dout);
   }

@@ -39,7 +39,7 @@
       <spirit:parameters>
         <spirit:parameter>
           <spirit:name>TDATA_NUM_BYTES</spirit:name>
-          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.I_AXIS.TDATA_NUM_BYTES">7</spirit:value>
+          <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="BUSIFPARAM_VALUE.I_AXIS.TDATA_NUM_BYTES">40</spirit:value>
           <spirit:vendorExtensions>
             <xilinx:parameterInfo>
               <xilinx:parameterUsage>none</xilinx:parameterUsage>
@@ -450,7 +450,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:33c58048</spirit:value>
+            <spirit:value>9:2536a158</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -461,7 +461,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:33c58048</spirit:value>
+            <spirit:value>9:2536a158</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -477,11 +477,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Sep 04 17:59:48 UTC 2020</spirit:value>
+            <spirit:value>Fri Sep 04 21:38:05 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:33c58048</spirit:value>
+            <spirit:value>9:2536a158</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -500,7 +500,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f921a5b2</spirit:value>
+            <spirit:value>9:3f252f3d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -516,11 +516,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Sep 04 17:59:48 UTC 2020</spirit:value>
+            <spirit:value>Fri Sep 04 21:38:05 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f921a5b2</spirit:value>
+            <spirit:value>9:3f252f3d</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -534,11 +534,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Fri Sep 04 18:02:57 UTC 2020</spirit:value>
+            <spirit:value>Fri Sep 04 21:41:10 UTC 2020</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:33c58048</spirit:value>
+            <spirit:value>9:2536a158</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -641,7 +641,7 @@
         <spirit:wire>
           <spirit:direction>in</spirit:direction>
           <spirit:vector>
-            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI_STREAM_DATA_WIDTH&apos;)) - 1)">55</spirit:left>
+            <spirit:left spirit:format="long" spirit:resolve="dependent" spirit:dependency="(spirit:decode(id(&apos;MODELPARAM_VALUE.AXI_STREAM_DATA_WIDTH&apos;)) - 1)">319</spirit:left>
             <spirit:right spirit:format="long">0</spirit:right>
           </spirit:vector>
           <spirit:wireTypeDefs>
@@ -768,12 +768,12 @@
       <spirit:modelParameter xsi:type="spirit:nameValueTypeType" spirit:dataType="integer">
         <spirit:name>AXI_STREAM_DATA_WIDTH</spirit:name>
         <spirit:displayName>Axi Stream Data Width</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXI_STREAM_DATA_WIDTH">56</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXI_STREAM_DATA_WIDTH">320</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>AXI_STREAM_NUM_TRANSFERS</spirit:name>
         <spirit:displayName>Axi Stream Num Transfers</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXI_STREAM_NUM_TRANSFERS">16</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.AXI_STREAM_NUM_TRANSFERS">1</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>GALAPAGOS_DATA_WIDTH</spirit:name>
@@ -870,12 +870,12 @@
     <spirit:parameter>
       <spirit:name>AXI_STREAM_DATA_WIDTH</spirit:name>
       <spirit:displayName>AXI-Stream Data Width (bits)</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.AXI_STREAM_DATA_WIDTH">56</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.AXI_STREAM_DATA_WIDTH">320</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>AXI_STREAM_NUM_TRANSFERS</spirit:name>
       <spirit:displayName>Number of AXI-Stream Transfers per Packet</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.AXI_STREAM_NUM_TRANSFERS">16</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.AXI_STREAM_NUM_TRANSFERS">1</spirit:value>
     </spirit:parameter>
     <spirit:parameter>
       <spirit:name>GALAPAGOS_DATA_WIDTH</spirit:name>

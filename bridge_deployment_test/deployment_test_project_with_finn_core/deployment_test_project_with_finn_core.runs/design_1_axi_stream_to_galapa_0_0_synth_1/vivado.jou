@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Fri Sep  4 18:00:08 2020
-# Process ID: 29780
-# Current directory: /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/design_1_axi_stream_to_galapa_0_0_synth_1
+# Start of session at: Fri Sep  4 21:38:24 2020
+# Process ID: 15582
+# Current directory: /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.runs/design_1_axi_stream_to_galapa_0_0_synth_1
 # Command line: vivado -log design_1_axi_stream_to_galapa_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_axi_stream_to_galapa_0_0.tcl
-# Log file: /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/design_1_axi_stream_to_galapa_0_0_synth_1/design_1_axi_stream_to_galapa_0_0.vds
-# Journal file: /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/design_1_axi_stream_to_galapa_0_0_synth_1/vivado.jou
+# Log file: /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.runs/design_1_axi_stream_to_galapa_0_0_synth_1/design_1_axi_stream_to_galapa_0_0.vds
+# Journal file: /home/justin/paulchowresearch2020/Galapagos/finn_galapagos_bridge/bridge_deployment_test/deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.runs/design_1_axi_stream_to_galapa_0_0_synth_1/vivado.jou
 #-----------------------------------------------------------
 source design_1_axi_stream_to_galapa_0_0.tcl -notrace

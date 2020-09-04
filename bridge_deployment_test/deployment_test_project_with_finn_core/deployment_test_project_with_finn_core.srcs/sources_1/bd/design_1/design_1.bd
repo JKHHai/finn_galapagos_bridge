@@ -9,7 +9,7 @@
       "validated": "true"
     },
     "design_tree": {
-      "packet": "",
+      "input_packet": "",
       "deployment_test_sour_0": "",
       "TID_1": "",
       "TID_2": "",
@@ -25,7 +25,9 @@
       "deployment_test_rece_0": "",
       "axi_stream_to_galapa_0": "",
       "galapagos_to_axi_str_0": "",
-      "util_ds_buf_0": ""
+      "util_ds_buf_0": "",
+      "StreamingFCLayer_Bat_0": "",
+      "expected_output_packet": ""
     },
     "interface_ports": {
       "sysclk100": {
@@ -44,15 +46,15 @@
       }
     },
     "components": {
-      "packet": {
+      "input_packet": {
         "vlnv": "xilinx.com:ip:xlconstant:1.1",
         "xci_name": "design_1_xlconstant_0_0",
         "parameters": {
           "CONST_VAL": {
-            "value": "0x0000000000000000000000000000049524A09515550D4FFF20EEFFF80F9FFFD0FFFBFA0FFFFF107FFFF207FFFF30BFF5C307E730E0FF1B3C0FCA2F807DACC30BC7D0307FFEFC0BFFE0005FFF000AFFC0000FFD000C824000B24B0006ED2000596600"
+            "value": "b1011011111111110010011111011101100001101010100001010010000111101"
           },
           "CONST_WIDTH": {
-            "value": "784"
+            "value": "64"
           }
         }
       },
@@ -61,13 +63,13 @@
         "xci_name": "design_1_deployment_test_sour_0_0",
         "parameters": {
           "AXIS_DATA_WIDTH": {
-            "value": "56"
+            "value": "8"
           },
           "NUM_BITS_PER_TRANSFER": {
-            "value": "49"
+            "value": "8"
           },
           "NUM_TRANSFERS": {
-            "value": "16"
+            "value": "8"
           }
         }
       },
@@ -110,10 +112,10 @@
         "xci_name": "design_1_system_ila_0_0",
         "parameters": {
           "C_NUM_MONITOR_SLOTS": {
-            "value": "4"
+            "value": "5"
           },
           "C_SLOT": {
-            "value": "3"
+            "value": "4"
           },
           "C_SLOT_0_INTF_TYPE": {
             "value": "xilinx.com:interface:axis_rtl:1.0"
@@ -125,6 +127,9 @@
             "value": "xilinx.com:interface:axis_rtl:1.0"
           },
           "C_SLOT_3_INTF_TYPE": {
+            "value": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "C_SLOT_4_INTF_TYPE": {
             "value": "xilinx.com:interface:axis_rtl:1.0"
           }
         },
@@ -142,6 +147,10 @@
             "vlnv": "xilinx.com:interface:axis_rtl:1.0"
           },
           "SLOT_3_AXIS": {
+            "mode": "Monitor",
+            "vlnv": "xilinx.com:interface:axis_rtl:1.0"
+          },
+          "SLOT_4_AXIS": {
             "mode": "Monitor",
             "vlnv": "xilinx.com:interface:axis_rtl:1.0"
           }
@@ -1383,16 +1392,16 @@
           }
         },
         "interface_nets": {
-          "zynq_ultra_ps_e_0_M_AXI_HPM0_FPD": {
-            "interface_ports": [
-              "zynq_ultra_ps_e_0/M_AXI_HPM0_FPD",
-              "smartconnect_0/S00_AXI"
-            ]
-          },
           "smartconnect_0_M00_AXI": {
             "interface_ports": [
               "smartconnect_0/M00_AXI",
               "debug_bridge_0/S_AXI"
+            ]
+          },
+          "zynq_ultra_ps_e_0_M_AXI_HPM0_FPD": {
+            "interface_ports": [
+              "zynq_ultra_ps_e_0/M_AXI_HPM0_FPD",
+              "smartconnect_0/S00_AXI"
             ]
           }
         },
@@ -1431,13 +1440,13 @@
         "xci_name": "design_1_deployment_test_rece_0_0",
         "parameters": {
           "AXIS_DATA_WIDTH": {
-            "value": "56"
+            "value": "320"
           },
           "NUM_BITS_PER_TRANSFER": {
-            "value": "49"
+            "value": "320"
           },
           "NUM_TRANSFERS": {
-            "value": "16"
+            "value": "1"
           }
         }
       },
@@ -1446,10 +1455,10 @@
         "xci_name": "design_1_axi_stream_to_galapa_0_0",
         "parameters": {
           "AXI_STREAM_DATA_WIDTH": {
-            "value": "56"
+            "value": "320"
           },
           "AXI_STREAM_NUM_TRANSFERS": {
-            "value": "16"
+            "value": "1"
           }
         }
       },
@@ -1458,16 +1467,32 @@
         "xci_name": "design_1_galapagos_to_axi_str_0_0",
         "parameters": {
           "AXI_STREAM_DATA_WIDTH": {
-            "value": "56"
+            "value": "320"
           },
           "GALAPAGOS_NUM_TRANSFERS": {
-            "value": "2"
+            "value": "1"
           }
         }
       },
       "util_ds_buf_0": {
         "vlnv": "xilinx.com:ip:util_ds_buf:2.1",
         "xci_name": "design_1_util_ds_buf_0_0"
+      },
+      "StreamingFCLayer_Bat_0": {
+        "vlnv": "xilinx.com:hls:StreamingFCLayer_Batch_3_memstream:1.0",
+        "xci_name": "design_1_StreamingFCLayer_Bat_0_0"
+      },
+      "expected_output_packet": {
+        "vlnv": "xilinx.com:ip:xlconstant:1.1",
+        "xci_name": "design_1_xlconstant_0_3",
+        "parameters": {
+          "CONST_VAL": {
+            "value": "0x00000018000000210000001f0000001f0000001c0000001e00000022000000380000001b00000022"
+          },
+          "CONST_WIDTH": {
+            "value": "320"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -1479,9 +1504,9 @@
       },
       "deployment_test_sour_0_o_test_axis": {
         "interface_ports": [
-          "deployment_test_sour_0/o_test_axis",
+          "StreamingFCLayer_Bat_0/out_V_V",
           "axi_stream_to_galapa_0/i_axis",
-          "system_ila_0/SLOT_0_AXIS"
+          "system_ila_0/SLOT_4_AXIS"
         ]
       },
       "deployment_test_rece_0_o_result": {
@@ -1503,14 +1528,20 @@
           "galapagos_to_axi_str_0/i_gp",
           "system_ila_0/SLOT_1_AXIS"
         ]
+      },
+      "deployment_test_sour_0_o_test_axis1": {
+        "interface_ports": [
+          "deployment_test_sour_0/o_test_axis",
+          "StreamingFCLayer_Bat_0/in0_V_V",
+          "system_ila_0/SLOT_0_AXIS"
+        ]
       }
     },
     "nets": {
       "packet_dout": {
         "ports": [
-          "packet/dout",
-          "deployment_test_sour_0/i_packet_to_send",
-          "deployment_test_rece_0/i_expected_packet"
+          "input_packet/dout",
+          "deployment_test_sour_0/i_packet_to_send"
         ]
       },
       "TID_1_dout": {
@@ -1533,7 +1564,8 @@
           "system_ila_0/resetn",
           "deployment_test_rece_0/i_aresetn",
           "axi_stream_to_galapa_0/i_aresetn",
-          "galapagos_to_axi_str_0/i_aresetn"
+          "galapagos_to_axi_str_0/i_aresetn",
+          "StreamingFCLayer_Bat_0/ap_rst_n"
         ]
       },
       "i_clock_1": {
@@ -1544,13 +1576,20 @@
           "system_ila_0/clk",
           "deployment_test_rece_0/i_clk",
           "axi_stream_to_galapa_0/i_clk",
-          "galapagos_to_axi_str_0/i_clk"
+          "galapagos_to_axi_str_0/i_clk",
+          "StreamingFCLayer_Bat_0/ap_clk"
         ]
       },
       "vio_0_probe_out0": {
         "ports": [
           "vio_0/probe_out0",
           "deployment_test_sour_0/i_enable"
+        ]
+      },
+      "expected_output_packet_dout": {
+        "ports": [
+          "expected_output_packet/dout",
+          "deployment_test_rece_0/i_expected_packet"
         ]
       }
     },

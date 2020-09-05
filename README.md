@@ -16,6 +16,7 @@ This repository also contains scripts and functions written in Python which assi
 
 # Requirements and Support
 ## Requirements
+[FINN](https://github.com/Xilinx/finn) requires Vivado 2019.1. A lot of the Galapagos IP in this repo was created using Vivado 2018.3, but FINN runs into issues if 2018.3 is used.
 Although the bridges are written in Verilog, the IP contained in [ip-bridge](https://github.com/JKHHai/finn_galapagos_bridge/tree/master/ip-bridge) has been packaged using Vivado, for Xilinx devices. The user is welcome to try to compile these bridges for Intel devices as well, no Xilinx-specific technology has been used. 
 ## Support
 The bridges are designed to work on all FPGAs, no FPGA-specific technology has been used. That being said, they have only been tested on a Xilinx® Zynq® UltraScale+<sup>TM</sup> ZU19EG MPSOC on a Fidus Sidewinder-100<sup>TM</sup> board.

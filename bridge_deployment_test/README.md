@@ -4,6 +4,7 @@ This directory contains two projects which contain an axi_stream_to_galapagos_br
 2. [deployment_test_project_with_finn_core](#deployment_test_project_with_finn_core).
 
 ## deployment_test_project
+![deployment_test_project_block_diagram](https://github.com/JKHHai/finn_galapagos_bridge/blob/master/documentation/documentation_images/deployment_test_project.png)
 This project contains the following cores:
 - axi_stream_to_galapagos_bridge
 - galapagos_to_axi_stream_bridge
@@ -40,6 +41,7 @@ Simulates the behaviour of a FINN core input. Reads data over AXI-Stream from ga
 - Same as [deployment_test_source_block](#deployment_test_source_block).
 
 ## deployment_test_project_with_finn_core
+![deployment_test_project_with_finn_core_block_diagram](https://github.com/JKHHai/finn_galapagos_bridge/blob/master/documentation/documentation_images/deployment_test_project_with_finn_core.png)
 This project is almost identical to [deployment_test_project](#deployment_test_project). It works in the same way, and contains almost identical cores. The differences are as follows:
 1. A FINN StreamingFCLayer_Batch_3_memstream core has been inserted between the deployment_test_source_block and the axi_stream_to_galapagos_bridge. This means that the bridge will be receiving AXI-Stream transfers directly from the FINN core, but the test can still be remotely activated. 
 2. Because a FINN core has been inserted, the [parameters](#parameters) for deployment_test and bridge cores must be set correctly. They have already been set for the current FINN core, but if you choose to replace a core with your own please update the following:
@@ -75,12 +77,16 @@ These projects were built to run on a Xilinx® Zynq® UltraScale+<sup>TM</sup> Z
 8. Select Local Server, then click Add Xilinx Virtual Cable (XVC).
 9. Enter the internal IP address of the MPSOC.
 10. You should now see the following window open up. There are 2 main tabs: hw_ila_1, which will allow you to view signals, and hw_vios, which will allow you to set the enable signal.
+![ila](https://github.com/JKHHai/finn_galapagos_bridge/blob/master/documentation/documentation_images/ila.png)
 11. If needed, specify the debug_probes file. This is found in [bridge_deployment_test/deployment_test_project/deployment_test_project.runs/impl_1/debug_nets.ltx](#https://github.com/JKHHai/finn_galapagos_bridge/blob/master/bridge_deployment_test/deployment_test_project/deployment_test_project.runs/impl_1/debug_nets.ltx). (if using deployment_test_project_with_finn_core, start at deployment_test_project_with_finn_core/deployment_test_project_with_finn_core.runs/)
 12. Navigate to hw_ila_1 and set up a new trigger using the + button. Set up a trigger on *slot_3: deployment_test_rece_0_o_result : TVALID*. Set it so that it triggers when the value == 1.
   - This means that the ILA will trigger when a result has been sent out by the deployment_test_receiving_block.
 13. Navigate to hw_vios. If needed, add the signal to the list of VIOs.
+![vio_setup](https://github.com/JKHHai/finn_galapagos_bridge/blob/master/documentation/documentation_images/vio_setup.png)
 14. Start the test by setting the VIO signal to 1.
+![vio_enable](https://github.com/JKHHai/finn_galapagos_bridge/blob/master/documentation/documentation_images/vio_enable.png)
 15. Navigate to hw_ila_1, you should see something like the following. Analyze the value of *o_result_PASS*, and check out some of the other signals as well.
+![ila](https://github.com/JKHHai/finn_galapagos_bridge/blob/master/documentation/documentation_images/ila.png)
 
 # Swapping Part in Vivado Project
 1. Open the project in Vivado.
